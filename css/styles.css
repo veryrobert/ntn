@@ -1,0 +1,10 @@
+/* line 1, ../sass/styles.scss */
+div.images {
+  position: absolute;
+  cursor: move;
+  z-index: 100;
+}
+/* line 10, ../sass/styles.scss */
+div.images:hover {
+  z-index: 200;
+}
