@@ -23,3 +23,27 @@
 
 // Place any jQuery/helper plugins in here.
 
+
+
+var posLeft = [ '100','200','300','600','700','800']
+var posTop = [ '100','200','300','400','500','600','700' ]
+
+$(document).ready(function(){
+
+
+$('.images').each(function(i,el){
+
+  var imgTop = posTop[Math.floor(Math.random()*posTop.length)]
+  var imgLeft = posLeft[Math.floor(Math.random()*posLeft.length)]
+  
+  $(el).css({left: imgLeft + "px", top: imgTop + "px"});
+  
+});
+
+$(function() {
+    $( ".images" ).draggable();
+  });
+
+
+
+});
