@@ -1,21 +1,103 @@
+// - - - - - - - - - - - - -  Imports Styles - - - - - - - - - - - - - - - - //
+
+
+@import "compass/reset";
+@import "variables";
+@import "type";
+
+// - - - - - - - - - - - - -  Mixins Styles - - - - - - - - - - - - - - - - //
+
+
+
+// - - - - - - - - - - - - -  Global Styles - - - - - - - - - - - - - - - - //
+
+body {
+	height: 3000px;
+}
+
+
+.container {
+
+position: relative;
+top: 0px;
+left: 0px;
+height:2000px;
+
+}
+
 div.images {
-
-
-position: absolute;
-cursor: move;
-
-
-z-index: 100;
-
-&:hover {
-
-z-index: 200;
-
-
+	position: absolute;
+	z-index: 100;
+		&:hover {
+			z-index: 200;
+		}
 }
 
 
-
+.wrap {
+	margin: 0 auto;
+	width: 95%;
 }
 
+
+.imglink {
+  position:absolute;
+  background:#ffffff;
+  top:0px;
+  left:0px;
+  padding:10px 15px 10px 15px;
+  opacity:0;
+}
+.active {
+  opacity:1;
+}
+
+// Image positions 
+
+.one {
+	top: 15%;
+	left: 10%;
+
+	}
+
+
+
+.two {
+	top: 30%;
+	left: 50%;
+
+	}
+
+
+
+.three {
+	top: 50%;
+	left: 20%;
+
+	}
+
+
+
+.four {
+	top: 60%;
+	left: 15%;
+
+	}
+
+ 
+
+.five {
+	top: 80%;
+	left: 60%;
+
+	}
+
+ 
+
+.six {
+	top: 80%;
+	left: 40%;
+	}
+
+ 
 
