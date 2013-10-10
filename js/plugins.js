@@ -1,52 +1,85 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+$(document).ready(function(){
 
-    while (length--) {
-        method = methods[length];
+$('.open').click(function(){
+    $('.fullscreen').fadeIn('fullscreen_show');
+       $('.fullscreen').show('fullscreen_show');
 
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
+    $('.close').fadeIn('.close');
+       $('.close').show('.close');
 
 
-$(function() {
-  $("img.lazy").lazyload({
-    effect : "fadeIn",
-    effectspeed : 900
   });
+
+$('.close').click(function(){
+    $('.fullscreen').fadeOut('fullscreen_show');
+       $('.fullscreen').hide('fullscreen_show'); 
+
+
+      $('.close').fadeOut('.close');
+       $('.close').hide('.close');
+
 });
 
 
-// Below is the love I have for Sean "Code Like a M*ther F*cking Boss" Mongey
+$(function () {
+    // attaching click handler to links
+    $("a.open").click(function (e) {
+        // cancel the default behaviour
+        e.preventDefault();
 
-$.stellar({
-  horizontalScrolling: false,
-  verticalOffset: 0,
-  responsive: true
-});
+        // get the address of the link
+        var href = $(this).attr('href');
+        // getting the desired element for working with it later
+        var $wrap = $('#ajax-wrap');
 
-// Loads of love
-
-
-// Hover for images
-
-  $('.images').hover(function(){
-    $(this).find('.imglink').addClass('active');
-      },
-    function(){
-      console.log('hovered out');   
-       $('.imglink').removeClass('active');
+        $wrap
+            // removing old data
+            .html('')
+            // load the remote page
+            .load(href + '#content');
     });
+
+});
+
+// Lazy load
+  $(function() {
+    $(".lazy").lazyload({
+      effect : "fadeIn",
+      effectspeed : 900
+    });
+  });
+
+
+  // Below is the love I have for Sean "Code Like a M*ther F*cking Boss" Mongey
+
+  $.stellar({
+    horizontalScrolling: false,
+    verticalOffset: 0,
+    responsive: true
+  });
+
+  // Loads of love
+
+
+  // Hover for images
+
+    $('.images').hover(function(){
+      $(this).find('.imglink').addClass('active');
+        },
+      function(){
+        console.log('hovered out');   
+         $('.imglink').removeClass('active');
+      });
+
+
+});
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+@import url("http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal");
 /* line 17, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,82 +64,232 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 14, ../sass/styles.scss */
-body {
-  height: 3000px;
+/* line 3, ../sass/img-positions/_one.scss */
+.one {
+  top: 315px;
+  left: 10%;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 11, ../sass/img-positions/_one.scss */
+.two {
+  top: 430px;
+  left: 50%;
+}
+
+/* line 19, ../sass/img-positions/_one.scss */
+.three {
+  top: 650px;
+  left: 20%;
+}
+
+/* line 27, ../sass/img-positions/_one.scss */
+.four {
+  top: 860px;
+  left: 15%;
+}
+
+/* line 35, ../sass/img-positions/_one.scss */
+.five {
+  top: 980px;
+  left: 60%;
+}
+
+/* line 43, ../sass/img-positions/_one.scss */
+.six {
+  top: 1080px;
+  left: 40%;
+}
+
+/* line 30, ../sass/styles.scss */
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 36, ../sass/styles.scss */
 .container {
   position: relative;
   top: 0px;
   left: 0px;
-  height: 2000px;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
+.logo {
+  position: fixed;
+  z-index: 4000;
+  left: 5%;
+  top: 220px;
+  background-image: url("../img/low-res/logo.png");
+  background-image: url("../img/logo.svg"), none;
+  width: 56px;
+  height: 19px;
+  text-indent: 3000px;
+  overflow: hidden;
+}
+
+/* line 59, ../sass/styles.scss */
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 66, ../sass/styles.scss */
+nav {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  right: 2%;
+  top: 0px;
+  z-index: 4000;
+  background-color: white;
+  padding: 13px 12px 13px 15px;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+/* line 76, ../sass/styles.scss */
+nav li {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  margin-right: 12px;
+}
+/* line 80, ../sass/styles.scss */
+nav li a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: solid 1px #fff;
+}
+/* line 85, ../sass/styles.scss */
+nav li a:hover {
+  border-bottom: solid 1px #e5cd65;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #d6ba4f;
+  padding-bottom: 3px;
+}
+/* line 92, ../sass/styles.scss */
+nav li:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 96, ../sass/styles.scss */
+nav li:last-child {
+  margin-right: 0px;
+}
+/* line 98, ../sass/styles.scss */
+nav li:last-child:after {
+  content: "";
+}
+
+/* line 107, ../sass/styles.scss */
 div.images {
   position: absolute;
   z-index: 100;
 }
-/* line 31, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 div.images:hover {
   z-index: 200;
 }
 
-/* line 37, ../sass/styles.scss */
-.wrap {
-  margin: 0 auto;
-  width: 95%;
+/* line 115, ../sass/styles.scss */
+.content {
+  position: relative;
+  top: 120px;
+  left: 10%;
+  width: 750px;
+  background-color: #fff;
+}
+/* line 123, ../sass/styles.scss */
+.content img {
+  position: relative;
+  display: block;
+  right: 0px;
+  left: 107px;
 }
 
-/* line 43, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
+.ajax-wrap {
+  height: 2000px;
+}
+
+/* line 137, ../sass/styles.scss */
+p {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 144, ../sass/styles.scss */
 .imglink {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: absolute;
   background: #ffffff;
   top: 0px;
   left: 0px;
-  padding: 10px 15px 10px 15px;
+  padding: 12px 10px 12px 10px;
   opacity: 0;
 }
 
-/* line 51, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .active {
   opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: none;
 }
 
-/* line 57, ../sass/styles.scss */
-.one {
-  top: 15%;
-  left: 10%;
+/* line 168, ../sass/styles.scss */
+.close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  background: aqua;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 5001;
+  display: none;
 }
 
-/* line 65, ../sass/styles.scss */
-.two {
-  top: 30%;
-  left: 50%;
+/* line 182, ../sass/styles.scss */
+.fullscreen_show {
+  position: absolute;
+  display: none;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: #e4e4e4;
 }
 
-/* line 73, ../sass/styles.scss */
-.three {
-  top: 50%;
-  left: 20%;
-}
-
-/* line 81, ../sass/styles.scss */
-.four {
-  top: 60%;
-  left: 15%;
-}
-
-/* line 89, ../sass/styles.scss */
-.five {
-  top: 80%;
-  left: 60%;
-}
-
-/* line 97, ../sass/styles.scss */
-.six {
-  top: 80%;
-  left: 40%;
+/* line 198, ../sass/styles.scss */
+#aqua {
+  background-color: aqua;
+  font-family: sans-serif;
 }
