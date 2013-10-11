@@ -1,13 +1,22 @@
-
-
 <div id="content" class="content">
 	
-	<p>
-		This is pretty awesome
+
+
+	<h2>
+		Title of project
+	</h2>
+
+
+	<p class="large">
+		The windor chair beard Shoreditch Carles, narwhal sint Pinterest Cosby sweater polaroid. Sed pug duis butcher commodo. Non nisi gluten-free, iPhone cupidatat velit gentrify assumenda mumblecore Schlitz.
 	</p>
 
-<img src="img/image-01.png" height="432" width="644">
-<img src="img/image-01.png" height="432" width="644">
-<img src="img/image-01.png" height="432" width="644">
+
+	<ul>
+	<li><img src="img/image-01.png" height="432" width="644"></li>
+	<li><img src="img/image-01.png" height="432" width="644"></li>
+	<li><img src="img/image-01.png" height="432" width="644"></li>
+	</ul>
+
 </div>
 

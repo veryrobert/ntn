@@ -22,6 +22,29 @@
   -webkit-font-smoothing: antialiased;
 }
 
+// Image hover mixin
+@mixin sprite {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+@mixin sprite-after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin sprite-hover {
+  opacity: 1;
+}
+
+
 // - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - - - //
 
 // Body & Wrap
@@ -113,18 +136,37 @@ div.images {
 }
 
 .content {
+  position: relative;
+  top: 120px;
+  left: 10%;
+  width: 720px;
+  padding-top: 14px;
+  padding-left: 25px;
+  padding-bottom: 30px;
 
-position: relative;
-top: 120px;
-left: 10%;
-width: 750px;
-background-color: #fff;
+  background-color: #fff;
+  ul {
+  
+  li {
+    position: relative;
+    display: block;
+    right: 0px;
+    left: 0px;
+    width:720px;
+    margin-bottom:20px; 
 
-img {position:relative; display: block; right: 0px; left: 107px;}
+&:last-child { margin-bottom: 100px;}
 
+    img { width: 720px; }
+
+    }
+
+  }
 }
 
-.ajax-wrap { height: 2000px;}
+.ajax-wrap {
+  height: 2000px;
+}
 
 // - - - - - - - - - - - - - – - Colour – - - - - - - - - - - - - - - - - //
 
@@ -132,10 +174,37 @@ img {position:relative; display: block; right: 0px; left: 107px;}
 
 // Headers
 
+h1, h2, h3, h4 {
+  @include monospace;
+}
+
 // Paragraphs
 
 p {
   @include monospace;
+}
+
+a {
+  @include monospace;
+}
+
+.content {
+
+p { 
+
+  font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif; 
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 2px;
+  line-height: 32px;
+  width: 690px;
+
+  margin-top: 80px; 
+  margin-bottom: 80px;
+
+}
+
 }
 
 // List
@@ -149,11 +218,8 @@ p {
   left: 0px;
   padding: 12px 10px 12px 10px;
   opacity: 0;
-// &:hover { color:#e5cd65;}
+  // &:hover { color:#e5cd65;}
 }
-
-
-
 
 .active {
   opacity: 1;
@@ -163,24 +229,58 @@ p {
 
 // - - - - - - - - - - - - - Overlay Styles - - - - - - - - - - - - - - - - //
 
+// .close {
+
+//   right: 50px;
+//   top: 50px;
+
+//   width: 36px;
+//   height: 72px;
+//   cursor: pointer;
+//   z-index: 5001;
+//   // display: none;
+//   text-indent: -9999px;
+//   overflow: hidden;
+
+// }
 
 
+// Checkout mixins for the rest
 .close {
-  
+  @include sprite;
   position: absolute;
-  right: 50px;
-  top: 50px;
-  background: aqua;
-  width: 50px;
-  height:50px;
-  cursor: pointer;
-    z-index: 5001;
-    display: none;
+  top:20px;
+  right: 20px;
+
+  display: none;
+
+  z-index: 5001;
+
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+  &:after {
+    @include sprite-after;
+    background-position: 0px -37px;
+    background-image: url("../img/low-res/close.png");
+    background-image: url("../img/close.svg"), none;
+  }
+  &:hover:after {
+    @include sprite-hover;
+  }
 }
 
-
-
-
+.fullscreen_show {
+  position: absolute;
+  display: none;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: #e4e4e4;
+}
 
 // - - - - - - - - - - - - - Fixes & Classes - - - - - - - - - - - - - - - - //
 

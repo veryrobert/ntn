@@ -100,20 +100,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 40%;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .wrap {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 36, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .container {
   position: relative;
   top: 0px;
   left: 0px;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .logo {
   position: fixed;
   z-index: 4000;
@@ -127,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow: hidden;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 a {
   color: black;
   text-decoration: none;
@@ -137,7 +137,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 nav {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -153,7 +153,7 @@ nav {
   letter-spacing: 0.5px;
   font-size: 13px;
 }
-/* line 76, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 nav li {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -163,7 +163,7 @@ nav li {
   display: inline;
   margin-right: 12px;
 }
-/* line 80, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 nav li a {
   color: black;
   text-decoration: none;
@@ -173,7 +173,7 @@ nav li a {
   transition: all 0.3s ease-in-out;
   border-bottom: solid 1px #fff;
 }
-/* line 85, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 nav li a:hover {
   border-bottom: solid 1px #e5cd65;
   -webkit-transition: all 0.3s ease-in-out;
@@ -183,54 +183,76 @@ nav li a:hover {
   color: #d6ba4f;
   padding-bottom: 3px;
 }
-/* line 92, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 nav li:after {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 96, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 nav li:last-child {
   margin-right: 0px;
 }
-/* line 98, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 nav li:last-child:after {
   content: "";
 }
 
-/* line 107, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 div.images {
   position: absolute;
   z-index: 100;
 }
-/* line 110, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 div.images:hover {
   z-index: 200;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .content {
   position: relative;
   top: 120px;
   left: 10%;
-  width: 750px;
+  width: 720px;
+  padding-top: 14px;
+  padding-left: 25px;
+  padding-bottom: 30px;
   background-color: #fff;
 }
-/* line 123, ../sass/styles.scss */
-.content img {
+/* line 150, ../sass/styles.scss */
+.content ul li {
   position: relative;
   display: block;
   right: 0px;
-  left: 107px;
+  left: 0px;
+  width: 720px;
+  margin-bottom: 20px;
+}
+/* line 158, ../sass/styles.scss */
+.content ul li:last-child {
+  margin-bottom: 100px;
+}
+/* line 160, ../sass/styles.scss */
+.content ul li img {
+  width: 720px;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .ajax-wrap {
   height: 2000px;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
+h1, h2, h3, h4 {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 183, ../sass/styles.scss */
 p {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -239,7 +261,29 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
+a {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 193, ../sass/styles.scss */
+.content p {
+  font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 2px;
+  line-height: 32px;
+  width: 690px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* line 213, ../sass/styles.scss */
 .imglink {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -253,7 +297,7 @@ p {
   opacity: 0;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .active {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
@@ -263,20 +307,44 @@ p {
   border-bottom: none;
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 249, ../sass/styles.scss */
 .close {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
   position: absolute;
-  right: 50px;
-  top: 50px;
-  background: aqua;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 5001;
+  top: 20px;
+  right: 20px;
   display: none;
+  z-index: 5001;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+}
+/* line 263, ../sass/styles.scss */
+.close:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-position: 0px -37px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+}
+/* line 269, ../sass/styles.scss */
+.close:hover:after {
+  opacity: 1;
 }
 
-/* line 182, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .fullscreen_show {
   position: absolute;
   display: none;
@@ -288,7 +356,7 @@ p {
   background: #e4e4e4;
 }
 
-/* line 198, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 #aqua {
   background-color: aqua;
   font-family: sans-serif;

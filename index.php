@@ -2,6 +2,7 @@
    
 
 
+<a class="open home" href="awesome.php">next</a>
 
 
 <div class="close">Close</div>  
