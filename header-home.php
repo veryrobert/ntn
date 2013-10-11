@@ -14,7 +14,7 @@
 
        <script src="js/modernizr.js"></script>
     </head>
-    <body class="show">
+    <body class="home">
 
     	<div class="wrap">
 
@@ -22,12 +22,12 @@
 <header>
    
 
-<!--     
+     
 <div class="logo"><a href="#">NTN</a></div>
 
 <?php include'menu.php'; ?>
 
 </header>
 
--->
+
 

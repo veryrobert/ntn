@@ -100,20 +100,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 40%;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .wrap {
   width: 95%;
   margin: 0 auto;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .container {
   position: relative;
   top: 0px;
   left: 0px;
 }
 
-/* line 67, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 .logo {
   position: fixed;
   z-index: 4000;
@@ -127,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow: hidden;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 a {
   color: black;
   text-decoration: none;
@@ -137,7 +137,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 nav {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -153,7 +153,7 @@ nav {
   letter-spacing: 0.5px;
   font-size: 13px;
 }
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 nav li {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -163,7 +163,7 @@ nav li {
   display: inline;
   margin-right: 12px;
 }
-/* line 103, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 nav li a {
   color: black;
   text-decoration: none;
@@ -173,7 +173,7 @@ nav li a {
   transition: all 0.3s ease-in-out;
   border-bottom: solid 1px #fff;
 }
-/* line 108, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 nav li a:hover {
   border-bottom: solid 1px #e5cd65;
   -webkit-transition: all 0.3s ease-in-out;
@@ -183,33 +183,33 @@ nav li a:hover {
   color: #d6ba4f;
   padding-bottom: 3px;
 }
-/* line 115, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 nav li:after {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 119, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 nav li:last-child {
   margin-right: 0px;
 }
-/* line 121, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 nav li:last-child:after {
   content: "";
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 div.images {
   position: absolute;
   z-index: 100;
 }
-/* line 133, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 div.images:hover {
   z-index: 200;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .content {
   position: relative;
   top: 120px;
@@ -220,7 +220,7 @@ div.images:hover {
   padding-bottom: 30px;
   background-color: #fff;
 }
-/* line 150, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .content ul li {
   position: relative;
   display: block;
@@ -229,21 +229,21 @@ div.images:hover {
   width: 720px;
   margin-bottom: 20px;
 }
-/* line 158, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .content ul li:last-child {
   margin-bottom: 100px;
 }
-/* line 160, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .content ul li img {
   width: 720px;
 }
 
-/* line 167, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .ajax-wrap {
   height: 2000px;
 }
 
-/* line 177, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 h1, h2, h3, h4 {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -252,7 +252,7 @@ h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 183, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 p {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -261,7 +261,7 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 a {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -270,7 +270,7 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 193, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 .content p {
   font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
   font-size: 20px;
@@ -280,10 +280,10 @@ a {
   line-height: 32px;
   width: 690px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .imglink {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -297,7 +297,7 @@ a {
   opacity: 0;
 }
 
-/* line 224, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .active {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
@@ -307,7 +307,7 @@ a {
   border-bottom: none;
 }
 
-/* line 249, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .close {
   display: inline-block;
   position: relative;
@@ -322,7 +322,7 @@ a {
   background-image: url("../img/low-res/close.png");
   background-image: url("../img/close.svg"), none;
 }
-/* line 263, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .close:after {
   content: "";
   position: absolute;
@@ -339,13 +339,13 @@ a {
   background-image: url("../img/low-res/close.png");
   background-image: url("../img/close.svg"), none;
 }
-/* line 269, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .close:hover:after {
   opacity: 1;
 }
 
-/* line 274, ../sass/styles.scss */
-.fullscreen_show {
+/* line 275, ../sass/styles.scss */
+.fullscreen {
   position: absolute;
   display: none;
   z-index: 5000;
@@ -356,7 +356,7 @@ a {
   background: #e4e4e4;
 }
 
-/* line 289, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 #aqua {
   background-color: aqua;
   font-family: sans-serif;

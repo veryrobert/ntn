@@ -1,45 +1,42 @@
+if ( !$('body').hasClass('home') ) {
+
+  fullscreeninstant();
+
+}
+
 $(document).ready(function(){
 
-$('.open').click(function(){
-    $('.fullscreen').fadeIn('fullscreen_show');
-       $('.fullscreen').show('fullscreen_show');
+  // attaching click handler to links
+  $("a.open").click(function(e) {
+      // cancel the default behaviour
+      fullscreen();
+      e.preventDefault();
 
-    $('.close').fadeIn('.close');
-       $('.close').show('.close');
+      var url =  $(this).attr('href');
 
+      history.pushState({},'', url);
+
+      // get the address of the link
+      var href = $(this).attr('href');
+      // getting the desired element for working with it later
+      var $wrap = $('#ajax-wrap');
+
+      $wrap
+          // removing old data
+          .html('')
+          // load the remote page
+          .load(href + ' #content');
 
   });
 
-$('.close').click(function(){
+//  Closing button
+  $('.close').click(function(){
     $('.fullscreen').fadeOut('fullscreen_show');
-       $('.fullscreen').hide('fullscreen_show'); 
-
-
+       history.pushState({}, '', 'ajax.php');
       $('.close').fadeOut('.close');
-       $('.close').hide('.close');
 
-});
+  });
 
-
-$(function () {
-    // attaching click handler to links
-    $("a.open").click(function (e) {
-        // cancel the default behaviour
-        e.preventDefault();
-
-        // get the address of the link
-        var href = $(this).attr('href');
-        // getting the desired element for working with it later
-        var $wrap = $('#ajax-wrap');
-
-        $wrap
-            // removing old data
-            .html('')
-            // load the remote page
-            .load(href + '#content');
-    });
-
-});
 
 // Lazy load
   $(function() {
@@ -49,34 +46,42 @@ $(function () {
     });
   });
 
-
-  // Below is the love I have for Sean "Code Like a M*ther F*cking Boss" Mongey
-
+// Parrallax
   $.stellar({
     horizontalScrolling: false,
     verticalOffset: 0,
     responsive: true
   });
 
-  // Loads of love
-
-
-  // Hover for images
-
-    $('.images').hover(function(){
-      $(this).find('.imglink').addClass('active');
-        },
-      function(){
-        console.log('hovered out');   
-         $('.imglink').removeClass('active');
-      });
-
+// Hover for images
+$('.images').hover(function(){
+    $(this).find('.imglink').addClass('active');
+    },
+    function(){
+     $('.imglink').removeClass('active');
+  });
 
 });
 
 
 
 
+
+// Open function
+
+function fullscreeninstant() {
+
+         $('.fullscreen').show();
+         $('.close').show();
+  
+}
+
+function fullscreen() {
+
+         $('.fullscreen').fadeIn(400);
+         $('.close').fadeIn(400);
+
+}
 
 
 
