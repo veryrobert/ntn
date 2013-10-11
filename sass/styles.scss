@@ -1,103 +1,304 @@
-// - - - - - - - - - - - - -  Imports Styles - - - - - - - - - - - - - - - - //
+// - - - - - - - - - - - - - Imports Styles - - - - - - - - - - - - - - - - //
 
 
+// Fonts & Shit
+@import url("http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal");
+
+// Compass
 @import "compass/reset";
+@import "compass/css3/transition";
 @import "variables";
+
+// Other stylesheets
 @import "type";
+@import "img-positions/_one.scss";
 
-// - - - - - - - - - - - - -  Mixins Styles - - - - - - - - - - - - - - - - //
+// - - - - - - - - - - - - - Mixins Styles - - - - - - - - - - - - - - - - //
 
+@mixin monospace {
+  font-family: $monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
 
+// Image hover mixin
+@mixin sprite {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
 
-// - - - - - - - - - - - - -  Global Styles - - - - - - - - - - - - - - - - //
+@mixin sprite-after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  @include transition(all 0.3s ease-in-out);
+}
 
-body {
-	height: 3000px;
+@mixin sprite-hover {
+  opacity: 1;
 }
 
 
-.container {
+// - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - - - //
 
-position: relative;
-top: 0px;
-left: 0px;
-height:2000px;
-
-}
-
-div.images {
-	position: absolute;
-	z-index: 100;
-		&:hover {
-			z-index: 200;
-		}
-}
-
+// Body & Wrap
+body {}
 
 .wrap {
-	margin: 0 auto;
-	width: 95%;
+  width: 95%;
+  margin: 0 auto;
 }
 
+// give height so images get spaced out
+.container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
 
+// Logo
+
+.logo {
+  position: fixed;
+  z-index: 4000;
+  left: 5%;
+  top: 220px;
+  background-image: url("../img/low-res/logo.png");
+  background-image: url("../img/logo.svg"), none;
+  width: 56px;
+  height: 19px;
+  text-indent: 3000px;
+  overflow: hidden;
+}
+
+// Links
+
+a {
+  color: $black;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+// Navigation
+nav {
+  @include monospace;
+  position: fixed;
+  right: 2%;
+  top: 0px;
+  z-index: 4000;
+  background-color: white;
+  padding: 13px 12px 13px 15px;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  li {
+    @include monospace;
+    display: inline;
+    margin-right: 12px;
+    a {
+      color: $black;
+      text-decoration: none;
+      @include transition(all 0.3s ease-in-out);
+      border-bottom: solid 1px #fff;
+      &:hover {
+        border-bottom: solid 1px #e5cd65;
+        @include transition(all 0.3s ease-in-out);
+        color: #d6ba4f;
+        padding-bottom: 3px;
+      }
+    }
+    &:after {
+      // content: " /";
+      @include transition(all 0.3s ease-in-out);
+    }
+    &:last-child {
+      margin-right: 0px;
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+// images
+
+div.images {
+  position: absolute;
+  z-index: 100;
+  &:hover {
+    z-index: 200;
+  }
+}
+
+.content {
+  position: relative;
+  top: 120px;
+  left: 10%;
+  width: 720px;
+  padding-top: 14px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+
+  background-color: #fff;
+  ul {
+  
+  li {
+    position: relative;
+    display: block;
+    right: 0px;
+    left: 0px;
+    width:720px;
+    margin-bottom:20px; 
+
+&:last-child { margin-bottom: 100px;}
+
+    img { width: 720px; }
+
+    }
+
+  }
+}
+
+.ajax-wrap {
+  height: 2000px;
+}
+
+// - - - - - - - - - - - - - – - Colour – - - - - - - - - - - - - - - - - //
+
+// - - - - - - - - - - - - - – Typogrpahy – - - - - - - - - - - - - - - - - //
+
+// Headers
+
+h1, h2, h3, h4 {
+  @include monospace;
+}
+
+// Paragraphs
+
+p {
+  @include monospace;
+}
+
+a {
+  @include monospace;
+}
+
+.content {
+
+p { 
+
+  font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif; 
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 2px;
+  line-height: 32px;
+  width: 690px;
+
+  margin-top: 80px; 
+  margin-bottom: 60px;
+
+}
+
+}
+
+// List
+
+// Image links
 .imglink {
-  position:absolute;
-  background:#ffffff;
-  top:0px;
-  left:0px;
-  padding:10px 15px 10px 15px;
-  opacity:0;
+  @include transition(all 0.3s ease-in-out);
+  position: absolute;
+  background: #ffffff;
+  top: 0px;
+  left: 0px;
+  padding: 12px 10px 12px 10px;
+  opacity: 0;
+  // &:hover { color:#e5cd65;}
 }
+
 .active {
-  opacity:1;
+  opacity: 1;
+   @include transition(all 0.3s ease-in-out);
+  border-bottom: none;
 }
 
-// Image positions 
+// - - - - - - - - - - - - - Overlay Styles - - - - - - - - - - - - - - - - //
 
-.one {
-	top: 15%;
-	left: 10%;
+// .close {
 
-	}
+//   right: 50px;
+//   top: 50px;
 
+//   width: 36px;
+//   height: 72px;
+//   cursor: pointer;
+//   z-index: 5001;
+//   // display: none;
+//   text-indent: -9999px;
+//   overflow: hidden;
 
-
-.two {
-	top: 30%;
-	left: 50%;
-
-	}
-
-
-
-.three {
-	top: 50%;
-	left: 20%;
-
-	}
+// }
 
 
+// Checkout mixins for the rest
+.close {
+  @include sprite;
+  position: absolute;
+  top:20px;
+  right: 20px;
 
-.four {
-	top: 60%;
-	left: 15%;
+  display: none;
 
-	}
+  z-index: 5001;
 
- 
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+  &:after {
+    @include sprite-after;
+    background-position: 0px -37px;
+    background-image: url("../img/low-res/close.png");
+    background-image: url("../img/close.svg"), none;
+  }
+  &:hover:after {
+    @include sprite-hover;
+  }
+}
 
-.five {
-	top: 80%;
-	left: 60%;
+.fullscreen {
+  position: absolute;
+  display: none;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: #e4e4e4;
+}
 
-	}
+.show {
 
- 
+// .fullscreen_show{
 
-.six {
-	top: 80%;
-	left: 40%;
-	}
+// display: block;
 
- 
+// }
 
+}
+
+
+// - - - - - - - - - - - - - Fixes & Classes - - - - - - - - - - - - - - - - //
+
+// - - - - - - - - - - - - - Fixes & Classes - - - - - - - - - - - - - - - - //
+
+#aqua {
+  background-color: aqua;
+  font-family: sans-serif;
+}
