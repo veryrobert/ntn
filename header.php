@@ -14,7 +14,7 @@
 
        <script src="js/modernizr.js"></script>
     </head>
-    <body >
+    <body>
 
 
 
@@ -23,23 +23,27 @@
    
 
     
-<!-- <div class="logo"><a href="#">NTN</a></div>
+<div class="logo"><a href="#">NTN</a></div>
 
-      
- -->
+
 
 <nav>
+  <ul>
+    <li><a href="collection.php" class="pages">collection</a></li>
+    <li><a href="info.php" class="pages">info</a></li>
+    <li><a href="stockists.php" class="pages">stockists</a></li>
+    <li><a href="press.php" class="pages">press</a></li>
+  </ul>
+</nav>
+
+<nav id="pages">
 <ul>
-  <li><a href="dynamic.php" class="link">Item link 1</a></li>
-  <li><a href="about.php" class="link">Item link 2</a></li>
-  <li><a href="contact.php" class="link">Item link 3</a></li>
+  <li><a href="dynamic.php" class="link overlay">Item link 1</a></li>
+  <li><a href="about.php" class="link overlay">Item link 2</a></li>
+  <li><a href="contact.php" class="link overlay">Item link 3</a></li>
 </ul>
 </nav>
  
- <div class="nextandprev">
-<a class="next-button" href="next">Next</a>
-<a class="prev-button" href="prev">Prev</a>  
-</div>
 
 
 </header>
