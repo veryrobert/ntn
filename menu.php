@@ -1,8 +1,12 @@
+
+
 <nav>
-	<ul>
-		<li><a href="#">collection</a></li>
-		<li><a href="#">info</a></li>
-		<li><a href="#">stockists</a></li>
-		<li><a href="#">press</a></li>
+	<ul id="pages">
+		<li><a class="link" href="one.php">Current</a></li>
+		<li><a class="link" href="dynamic.php">dynamic</a></li>
+		<li><a class="link" href="about.php">about</a></li>
+		<li><a class="link" href="contact.php">contact</a></li>
 	</ul>
+
 </nav>
+

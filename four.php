@@ -1,6 +1,18 @@
 <?php include('header.php') ?>
    
 
+<ul id="pages">
+  <li><a href="one.php" class="link">Item link 1</a></li>
+  <li><a href="two.php" class="link">Item link 2</a></li>
+  <li><a href="three.php" class="link">Item link 3</a></li>
+  <li><a href="four.php" class="link">Item link 4</a></li>
+  <li><a href="five.php" class="link">Item link 5</a></li>
+</ul>
+ 
+<a class="next-button" href="next">Next</a>
+<a class="prev-button" href="prev">Prev</a>  
+
+
 
 <a class="open" href="one.php">one</a>
 <a class="open" href="two.php">two</a>
