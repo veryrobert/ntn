@@ -3,7 +3,7 @@
 
 <div class="fullscreen active">
     
-    <div class="nextandprev">
+    <div class="nextandprev ">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a>
     </div>
