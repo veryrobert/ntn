@@ -28,13 +28,19 @@ $(document).ready(function() {
                                 history.pushState(null, null, _link);
                                 loadContent(_link);
                         }
-               
+           
+
+
+
+
+
+
                 $(".link").click(function(e) {
                         e.preventDefault();
+
+
+
                         var bodyTop = $('body').scrollTop();
-
-
-
 
                         if (bodyTop == 0) {
                                 linkage();
@@ -71,23 +77,25 @@ $(document).ready(function() {
                         return false;
                 });
 
-$('.link').click(function() {
-  var offset = $( this ).offset();
-  event.stopPropagation();
 
-$(this).data(offset.top);
 
-});
+// $('.link').click(function() {
+//   var offset = $( this ).offset();
+//   event.stopPropagation();
+
+// $(this).data(offset.top);
+
+// });
       
 
-// Using data to remember what was clicked and how far down a page a user was
+// // Using data to remember what was clicked and how far down a page a user was
 
- $(".link").on("click" , function(){
-  var linkHeight = $('.link img').height();
-  var offset = $(this).offset().top - linkHeight;
-  $('.link').data("scrollDown", offset);
-  return false;
-});
+//  $(".link").on("click" , function(){
+//   var linkHeight = $('.link img').height();
+//   var offset = $(this).offset().top - linkHeight;
+//   $('.link').data("scrollDown", offset);
+//   return false;
+// });
 
 
 
@@ -105,21 +113,25 @@ $(this).data(offset.top);
                         $('.close').removeClass('active');
                         $('.nextandprev').removeClass('active');
                         $('.nextandprev').fadeOut(30);
-                        $('.container').fadeIn();
+                        $('.container, .logo').fadeIn();
                         history.pushState({}, null, '/');
                         return false;
 
                 });
 
 
-
-
                 function loadContent(href) {
                         $mainContent.find("#guts", function() {}).fadeOut(200, function() {
                                 $mainContent.hide().load(href + " #guts", function() {
                                         $mainContent.fadeIn(500, function() {
-                                                fixHeight();
+                                              
+
+                                        $(".nextandprev.footer").css('top', $('.content').innerHeight() + 65);
+
+
                                                 $('.content').addClass('active');
+
+
                                                
                                         });
                                         $("nav a").removeClass("active");
@@ -136,14 +148,15 @@ $(this).data(offset.top);
         $(function() {
                 $(".lazy").lazyload({
                         effect: "fadeIn",
-                        effectspeed: 900
+                        effectspeed: 900,
+                        failure_limit : 15
                 });
         });
         // Parrallax
         $.stellar({
                 horizontalScrolling: false,
                 verticalOffset: 0,
-                responsive: true
+                responsive: false
         });
         // Hover for images
         $('.images').hover(function() {
@@ -151,6 +164,7 @@ $(this).data(offset.top);
         }, function() {
                 $('.imglink').removeClass('active');
         });
+        
         var fixHeight = function() {
                         console.log($('.content').innerHeight());       
                 }

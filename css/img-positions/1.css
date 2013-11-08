@@ -1,0 +1,105 @@
+/* line 4, ../../sass/img-positions/1.scss */
+.images img {
+  display: none;
+}
+
+/* line 8, ../../sass/img-positions/1.scss */
+.one img, .lamp-03 img, .table-03 img, .chair-03 img, .glasses-01 img, .watch-01 img, .family-02 img {
+  display: block;
+}
+
+/* line 15, ../../sass/img-positions/1.scss */
+.family-02 {
+  margin-top: 4400px;
+  right: 0%;
+}
+
+/* line 27, ../../sass/img-positions/1.scss */
+.chair-01 {
+  margin-top: 800px;
+  right: 0;
+}
+
+/* line 35, ../../sass/img-positions/1.scss */
+.chair-02 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 43, ../../sass/img-positions/1.scss */
+.chair-03 {
+  margin-top: 2000px;
+  right: 10%;
+}
+
+/* line 54, ../../sass/img-positions/1.scss */
+.glasses-01 {
+  margin-top: 2600px;
+  left: 0;
+}
+
+/* line 62, ../../sass/img-positions/1.scss */
+.glasses-02 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 70, ../../sass/img-positions/1.scss */
+.glasses-03 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 80, ../../sass/img-positions/1.scss */
+.table-01 {
+  margin-top: 4200px;
+  right: 0%;
+}
+
+/* line 88, ../../sass/img-positions/1.scss */
+.table-02 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 96, ../../sass/img-positions/1.scss */
+.table-03 {
+  margin-top: 1600px;
+  left: 10%;
+}
+
+/* line 107, ../../sass/img-positions/1.scss */
+.watch-01 {
+  margin-top: 3000px;
+  left: 30%;
+}
+
+/* line 116, ../../sass/img-positions/1.scss */
+.watch-02 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 124, ../../sass/img-positions/1.scss */
+.watch-03 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 134, ../../sass/img-positions/1.scss */
+.lamp-01 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 143, ../../sass/img-positions/1.scss */
+.lamp-02 {
+  margin-top: 0;
+  left: 0;
+}
+
+/* line 151, ../../sass/img-positions/1.scss */
+.lamp-03 {
+  margin-top: 0px;
+  left: 15%;
+}

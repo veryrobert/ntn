@@ -10,7 +10,7 @@
 
 // Other stylesheets
 @import "type";
-@import "img-positions/_one.scss";
+// @import "img-positions/_one.scss";
 
 // - - - - - - - - - - - - - Mixins Styles - - - - - - - - - - - - - - - - //
 
@@ -91,11 +91,15 @@ right: 0px;
 
 .nextandprev { display: none;
     top: 118px;
-  left: 830px;
+  left: 810px;
   position: absolute;
   z-index: 9999;
 
+&.footer { 
 
+// top: 3354px;
+
+}
 
 &.active {
   display: block;
@@ -104,12 +108,16 @@ right: 0px;
 
 }
 
+.next-button {
+  padding-right: 5px;
+  &:after{
+    content: " /";
+  }
+}
+
 
 nav {
   @include monospace;
-
-
-
   background-color: white;
   padding: 13px 12px 13px 15px;
   letter-spacing: 0.5px;
@@ -155,6 +163,9 @@ padding-bottom: 3px;
 div.images {
   position: absolute;
   z-index: 100;
+
+// img { display:block;}
+
   &:hover {
     z-index: 200;
   }
@@ -348,7 +359,15 @@ overflow-y:scroll;
   }
 }
 
+.inside-images {
 
+padding-bottom:140px;
+
+  img {
+    margin-bottom: 18px;
+  }
+
+}
 
 
 // - - - - - - - - - - - - - Fixes & Classes - - - - - - - - - - - - - - - - //
