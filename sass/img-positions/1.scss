@@ -1,16 +1,20 @@
 // Image positions 
 
 
-.images img { display:none; }
+.container {
 
-.one, .lamp-03, .table-03, .chair-03, .glasses-01, .watch-01, .family-02 {
+ img { display:none; }
 
-img {
-display: block;
 }
 
+.one, .lamp-03, .table-03, .chair-03, .glasses-01, .watch-01 { 
 
-	} 
+	img {
+		display:block; 
+	}
+
+}
+	
 
 .family-02 {
 	// table 01

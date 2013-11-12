@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<?php include('content.php'); ?>
+
 
 <div class="fullscreen active">
     
@@ -13,7 +13,7 @@
         <a class="prev-button" href="prev">Prev</a> 
     </div>
 
-    <a class="close active" href="#">Close</a>
+    <a class="close active" href="/">Close</a>
 
 	<section id="main-content">
 		<div id="guts" class="content">

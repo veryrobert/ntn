@@ -20,9 +20,12 @@
 <header>
    
     
-<div class="logo"><a href="#"></a></div>
+<div ><a class="logo" href="/"></a></div>
 
-<nav>
+
+
+
+<nav id="main-nav">
   <ul>
     <li><a href="collection.php" class="pages">collection</a></li>
     <li><a href="info.php" class="pages">info</a></li>

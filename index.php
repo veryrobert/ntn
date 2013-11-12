@@ -3,6 +3,7 @@
 
 <?php include('content.php'); ?>
 
+<span id="homepage-flag" style="display: none" ></span>
 
 <div class="fullscreen">
     

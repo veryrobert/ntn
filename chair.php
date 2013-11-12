@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
-<?php include('content.php'); ?>
 
-<div class="fullscreen">
+
+<div class="fullscreen active">
 	
 	<div class="nextandprev">
 		<a class="next-button" href="next">Next</a>
@@ -12,6 +12,8 @@
 		<a class="next-button" href="next">Next</a>
 		<a class="prev-button" href="prev">Prev</a> 
 	</div>
+
+<a class="close" href="">Close</a>
 
 	<!-- fullscreen closing div is on indivdual page -->
 

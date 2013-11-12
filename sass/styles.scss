@@ -89,8 +89,9 @@ right: 0px;
 
 #pages { display: none;}
 
-.nextandprev { display: none;
-    top: 118px;
+.nextandprev { 
+  display: none;
+  top: 118px;
   left: 810px;
   position: absolute;
   z-index: 9999;
@@ -213,6 +214,47 @@ div.images {
   }
 }
 
+
+.collection {
+  //  -webkit-transform-origin-x: 0;
+  // -webkit-transform-origin-y: 0;
+
+  -webkit-transform-origin-x: 0;
+  -webkit-transform-origin-y: 0;
+  -webkit-transform: scale(0.7);
+
+position: absolute;
+margin-top:220px;
+margin-left:15%;
+
+.imglink {
+opacity:1;
+}
+
+p { -webkit-transform-origin-x: 0;
+  -webkit-transform-origin-y: 0;
+  -webkit-transform: scale(1.5);
+border-top:solid 1px white;
+margin-top:-1px;
+}
+
+
+.images { 
+display:inline-block;
+clear:left;
+position:relative;
+margin-bottom: 30px;
+float:left;
+
+&:last-child { margin-bottom: 300px; display:inline-block;}
+
+ img{
+
+ }
+}
+
+}
+
 // - - - - - - - - - - - - - – - Colour – - - - - - - - - - - - - - - - - //
 
 // - - - - - - - - - - - - - – Typogrpahy – - - - - - - - - - - - - - - - - //
@@ -241,7 +283,7 @@ display: none;
 }
 
 
-#guts {
+.content.active {
 
 border-bottom: solid 500px #e4e4e4;
 
