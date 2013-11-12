@@ -1,0 +1,29 @@
+/* line 3, ../../sass/img-positions/2.scss */
+.one {
+  top: 800px;
+  left: 50%;
+}
+
+/* line 10, ../../sass/img-positions/2.scss */
+.two {
+  top: 500px;
+  left: 80%;
+}
+
+/* line 18, ../../sass/img-positions/2.scss */
+.three {
+  top: 1400px;
+  left: 60%;
+}
+
+/* line 25, ../../sass/img-positions/2.scss */
+.four {
+  top: 2000px;
+  left: 0%;
+}
+
+/* line 32, ../../sass/img-positions/2.scss */
+.five {
+  top: 2800px;
+  left: 40%;
+}
