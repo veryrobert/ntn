@@ -1,5 +1,22 @@
+
 $(document).ready(function() {
-    $(function() {
+
+
+if($("#homepage-flag").length > 0) {
+$.removeCookie('lastclicked');
+$(".close").attr("href", '/');
+
+} 
+
+$('.pages').click(function(){
+lastClicked = $.cookie('lastclicked', $('a.pages').attr('href'));
+});
+
+$(".close").attr("href", $.cookie('lastclicked'));
+
+
+
+  $(function() {
         // Sets Varibles 
         var newHash = "",
             $mainContent = $("#main-content"),
@@ -7,20 +24,38 @@ $(document).ready(function() {
             $guts = $("#guts"),
             $fullscreen = $(".fullscreen"),
             $pathName = $('.link').attr('href'),
-            $menu = $('nav a'),
+            $menu = $('nav#pages a'),
+            $mainNav = $('nav#main-nav a'),
             $el;
+
         var linkage = function() {
-                $('.container, .logo').fadeOut();
+                $('.container, .collection, .logo, #main-nav').fadeOut();
                 $fullscreen.addClass('active');
                 $('body').addClass('overlay');
                 $('.nextandprev').delay(900).fadeIn(200);
                 $mainContent.fadeIn(1000);
-                $('.close').addClass('active');
                 _link = $(".link").attr("href");
                 history.pushState(null, null, _link);
                 loadContent(_link);
             }
-        $(".link").click(function(e) {
+
+
+  $(".pages").click(function(e) {
+                $('.container').fadeOut();
+                $('.fullscreen').css('opacity','1');
+                $('#guts').css('border','none');
+                $('.close').css('display','none');
+                $('.nextandprev').css('display','none');
+                $mainContent.fadeIn(1000);
+                _link = $(".pages").attr("href");
+                history.pushState(null, null, _link);
+                loadContent(_link);
+                return false;
+        });        
+
+  
+
+  $(".link").click(function(e) {
             e.preventDefault();
             var bodyTop = $('body').scrollTop();
             if (bodyTop == 0) {
@@ -34,6 +69,7 @@ $(document).ready(function() {
             }
             return false;
         });
+
         $(".nextandprev").children().click(function() {
             var fullTop = $('.fullscreen').scrollTop();
             if (fullTop == 0) {
@@ -75,35 +111,36 @@ $(document).ready(function() {
             loadContent(_link);
             return false;
         });
-        $('.close').click(function() {
-            var position = $('.link').data("scrollDown");
-            $(document).scrollTop(position);
-            // $('.fullscreen').fadeOut();
-            $('.fullscreen').removeClass('active');
-            $('#guts').html('');
-            $('.content').removeClass('active');
-            $('body').removeClass('overlay');
-            $('.close').removeClass('active');
-            $('.nextandprev').removeClass('active');
-            $('.nextandprev').fadeOut(30);
-            $('.container, .logo').fadeIn();
-            history.pushState({}, null, '/');
-            return false;
-        });
+        
+
+        // $('.close').click(function() {
+        //     $('.fullscreen').removeClass('active');            
+        //     $('#guts').html('');
+        //     $('.content, .close, .nextandprev').removeClass('active');
+        //     $('body').removeClass('overlay');
+        //     $('.nextandprev').fadeOut(30);
+        //     $('.container, .logo, #main-nav').fadeIn();
+        //     // history.pushState({}, null, "/");
+        //     return false;
+        // });
+
+
 
         function loadContent(href) {
             $mainContent.find("#guts", function() {}).fadeOut(200, function() {
                 $mainContent.hide().load(href + " #guts", function() {
                     $mainContent.fadeIn(500, function() {
+
                         $(".nextandprev.footer").css('top', $('.content').innerHeight() + 65);
                         $('.content').addClass('active');
-                        $('.nextandprev').addClass('active');
                         $('.close').addClass('active');
+                        $('.nextandprev').addClass('active');
+ 
                     });
-                    $("nav a").removeClass("active");
+                    $("nav#pages a").removeClass("active");
                     $('.nextandprev').removeClass('active');
                     $('.close').removeClass('active');
-                    $("nav a[href$='" + href + "']").addClass("active");
+                    $("nav#pages a[href$='" + href + "']").addClass("active");
                 });
             });
         }
@@ -112,6 +149,11 @@ $(document).ready(function() {
             loadContent(_link);
         });
     });
+
+
+
+
+
     // Lazy load
     $(function() {
         $(".lazy").lazyload({
