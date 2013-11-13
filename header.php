@@ -12,7 +12,8 @@
         <link href="http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal" rel="stylesheet" type="text/css"/>
         
         <link rel="stylesheet" href="css/styles.css"> 
-       <link href="/css/img-positions/1.css" rel="stylesheet" type="text/css"/>
+       <!-- <link href="/css/img-positions/<?php echo mt_rand(1, 4); ?>.css" rel="stylesheet" type="text/css"/> -->
+        <link href="/css/img-positions/1.css" rel="stylesheet" type="text/css"/>
        <script src="js/modernizr.js"></script>
     </head>
     <body>
@@ -20,7 +21,7 @@
 <header>
    
     
-<div ><a class="logo" href="/"></a></div>
+<a  href="/"><div class="logo"></div></a>
 
 
 

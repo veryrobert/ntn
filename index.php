@@ -3,6 +3,20 @@
 
 <?php include('content.php'); ?>
 
+
+<div class="welcome-overlay">
+
+   <div>
+    <p>At NTN we design and produce collections of products. These products are connected by design rather than category. This is our first collection.</br>
+             
+    </p>
+    <a href="#">view collection</a>
+
+    </div>
+
+</div> 
+
+
 <span id="homepage-flag" style="display: none" ></span>
 
 <div class="fullscreen">
@@ -23,7 +37,7 @@
         <div class="content" id="guts"></div>
     </section>
 
-</div> <!-- fullscreen opening div is in content -->
-
+</div> <!-- fullscreen opening div is in content
+ -->
 
 <?php include('footer.php'); ?>
