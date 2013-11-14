@@ -19,7 +19,6 @@
 
 	<section id="product-content">
 		<div id="guts" class="content">
-
 			<h1>Chair Title</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 

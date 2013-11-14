@@ -427,7 +427,6 @@ a {
   min-height: 100%;
   height: auto;
   z-index: 0;
-  display: block;
   opacity: 0;
 }
 /* line 378, ../sass/styles.scss */

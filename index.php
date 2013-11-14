@@ -145,7 +145,7 @@
 
 
 
-
+<!-- 
 <div class="welcome-overlay">
 
    <div>
@@ -157,7 +157,7 @@
     </div>
 
 </div> 
-
+ -->
 
 <span id="homepage-flag" style="display: none" ></span>
 
