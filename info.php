@@ -2,7 +2,7 @@
 
 
 
-<section id="main-content">
+<section id="page-content">
   
             
 

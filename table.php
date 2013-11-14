@@ -15,7 +15,7 @@
 
     <a class="close active" href="/">Close</a>
 
-	<section id="main-content">
+	<section id="product-content">
 		<div id="guts" class="content">
 
 			<h1>Chair Title</h1>

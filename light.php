@@ -15,7 +15,7 @@
 
     <a class="close active" >Close</a>
 
-	<section id="main-content">
+	<section id="product-content">
 		<div id="guts" class="content">
 
 			<h1>Light Title</h1>

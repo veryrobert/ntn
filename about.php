@@ -4,7 +4,7 @@
 
 
 <a href="dynamic.php" class="link open">this is will open overlay</a>
-<section id="main-content">
+<section id="page-content">
 			<div id="guts" class="content" style="height:2500px">
 		
 		<h1>2500</h1>
