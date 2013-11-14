@@ -20,9 +20,6 @@ $(document).ready(function() {
     // $.removeCookie('test_status');
 
 
-
-
-   
     
     $('.welcome-overlay a').click(function() {
         $('.welcome-overlay').fadeOut(500);
@@ -160,26 +157,6 @@ $('body').css('background','aqua');
             return false;
         });
  
-// $mainContent.show();
-
-    //     function loadContent(href) {
-    //         $mainContent.find("#guts", function() {}).fadeOut(200, function() {
-    //             $mainContent.fadeOut().load(href + " #guts", function() {
-    //                 setTimeout(function() {
-    //                     $mainContent.fadeIn();
-    //                    console.log('this load after 5 seconds');
-    //                 }, 5000);
-    //             });
-    //         });
-    //     }
-
-    //     $(window).bind('popstate', function() {
-    //         _link = location.pathname.replace(/^.*[\\\/]/, '');
-    //         loadContent(_link);
-    //     });
-
-    // });
-    
 
 
 
