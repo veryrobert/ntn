@@ -9,6 +9,7 @@
         <script src="js/jquery.stellar.min.js" charset="utf-8"></script>
         <script src="js/jquery.cookie.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
+   
     
          <!-- <script src="js/plugins.js"></script> -->
    

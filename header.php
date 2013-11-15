@@ -21,7 +21,7 @@
 <header>
    
     
-<a  href="/"><div class="logo"></div></a>
+<a class="pages"  href="/"><div class="logo"></div></a>
 
 
 
@@ -37,10 +37,11 @@
 
 <nav id="pages">
 <ul>
-  <li><a href="chair.php" class="link overlay">Item link 1</a></li>
-  <li><a href="table.php" class="link overlay">Item link 1</a></li>
-  <li><a href="watch.php" class="link overlay">Item link 1</a></li>
-  <li><a href="glasses.php" class="link overlay">Item link 1</a></li>
+  <li><a href="chair.php" class="link overlay">chair</a></li>
+  <li><a href="table.php" class="link overlay">table</a></li>
+  <li><a href="watch.php" class="link overlay">watch</a></li>
+  <li><a href="glasses.php" class="link overlay">glasses</a></li>
+  <li><a href="light.php" class="link overlay">light</a></li>
 </ul>
 </nav>
  

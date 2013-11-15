@@ -168,10 +168,10 @@
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-    <div class="nextandprev footer">
+<!--     <div class="nextandprev footer">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a> 
-    </div>
+    </div> -->
 
     <a class="close" href="#">Close</a>
 

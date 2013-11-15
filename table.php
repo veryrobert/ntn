@@ -18,9 +18,9 @@
 	<section id="product-content">
 		<div id="guts" class="content">
 
-			<h1>Chair Title</h1>
+			<h1>table Title</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+				this is updating your not crazy ipsum dolor sit amet, consectetur adipisicing elit. 
 				sunt expedita corporis consectetur quia repellat officiis consequatur! 
 				Accusantium, dolor, ducimus pariatur perspiciatis molestiae mollitia beatae eaque 
 				ipsum atque earum consequatur!
