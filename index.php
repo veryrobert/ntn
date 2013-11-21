@@ -145,7 +145,7 @@
 
 
 
-<!-- 
+
 <div class="welcome-overlay">
 
    <div>
@@ -157,7 +157,7 @@
     </div>
 
 </div> 
- -->
+
 
 <span id="homepage-flag" style="display: none" ></span>
 
@@ -168,12 +168,12 @@
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-<!--     <div class="nextandprev footer">
+    <div class="npfooter">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a> 
-    </div> -->
+    </div>
 
-    <a class="close" href="#">Close</a>
+    <a class="close" >Close</a>
 
     <section id="product-content">
         <div class="content" id="guts"></div>

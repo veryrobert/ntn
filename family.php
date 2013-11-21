@@ -10,23 +10,20 @@
 
 
 <div class="fullscreen active">
+
+    <a class="close active" >Close</a>
+
+	<section id="product-content active">
+
     
-    <div class="nextandprev">
+    <div class="nextandprev active">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-    <div class="nextandprev footer">
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
-    </div>
+		<div id="guts" class="content active">
 
-    <a class="close active" href="/">Close</a>
-
-	<section id="product-content">
-		<div id="guts" class="content">
-
-			<h1>G1 Sunglasses</h1>
+			<h1>Collection 01</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 				sunt expedita corporis consectetur quia repellat officiis consequatur! 
@@ -45,6 +42,12 @@
 			</div>
 
 		</div>
+
+		   <div class="npfooter active">
+        <a class="next-button" href="next">Next</a>
+        <a class="prev-button" href="prev">Prev</a> 
+    </div>
+
 	</section>
 </div>
 

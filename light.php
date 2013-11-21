@@ -1,24 +1,30 @@
 <?php include('header.php'); ?>
 
 
-<div class="fullscreen active">
+<div id="page-content" class="home-images">
+    <div id="guts">
+    	
+    </div>
+</div>
+
+<div class="fullscreen">
     
     <div class="nextandprev">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-    <div class="nextandprev footer">
+    <div class="npfooter">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a> 
     </div>
 
-    <a class="close active" >Close</a>
+    <a class="close" >Close</a>
 
 	<section id="product-content">
-		<div id="guts" class="content">
+		<div id="guts" class="content" >
 
-			<h1>Light Title</h1>
+			<h1>Waterford Lamp</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 				sunt expedita corporis consectetur quia repellat officiis consequatur! 

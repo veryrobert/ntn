@@ -21,7 +21,7 @@
 <header>
    
     
-<a class="pages"  href="/"><div class="logo"></div></a>
+<a class="pages logoLink"  href="/"><div class="logo"></div></a>
 
 
 
