@@ -1,0 +1,615 @@
+@import url("http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal");
+/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 42, ../sass/styles.scss */
+body {
+  width: 100%;
+  min-height: 9000px;
+}
+/* line 45, ../sass/styles.scss */
+body.overlay {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 53, ../sass/styles.scss */
+.logo {
+  position: fixed;
+  z-index: 500;
+  left: 5%;
+  top: 220px;
+  background-image: url("../img/low-res/logo.png");
+  background-image: url("../img/logo.svg"), none;
+  width: 56px;
+  height: 19px;
+  text-indent: 3000px;
+  overflow: hidden;
+}
+
+/* line 68, ../sass/styles.scss */
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 76, ../sass/styles.scss */
+nav {
+  position: fixed;
+  z-index: 300;
+  right: 0px;
+}
+
+/* line 82, ../sass/styles.scss */
+#pages {
+  display: none;
+}
+
+/* line 86, ../sass/styles.scss */
+.nextandprev {
+  display: none;
+  top: 118px;
+  left: 810px;
+  position: absolute;
+  z-index: 9999;
+}
+/* line 92, ../sass/styles.scss */
+.nextandprev.footer {
+  top: 1000px;
+}
+/* line 95, ../sass/styles.scss */
+.nextandprev.active {
+  display: block;
+}
+
+/* line 100, ../sass/styles.scss */
+.next-button {
+  padding-right: 5px;
+}
+/* line 102, ../sass/styles.scss */
+.next-button:after {
+  content: " /";
+}
+
+/* line 107, ../sass/styles.scss */
+nav {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  padding: 13px 12px 13px 15px;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+/* line 113, ../sass/styles.scss */
+nav li {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  margin-right: 12px;
+}
+/* line 117, ../sass/styles.scss */
+nav li a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: solid 1px #fff;
+  padding: 0px;
+  margin: 6px;
+}
+/* line 124, ../sass/styles.scss */
+nav li a:hover {
+  border-bottom: solid 1px #e5cd65;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #d6ba4f;
+  padding-bottom: 3px;
+}
+/* line 131, ../sass/styles.scss */
+nav li:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 134, ../sass/styles.scss */
+nav li:last-child {
+  margin-right: 0px;
+}
+/* line 136, ../sass/styles.scss */
+nav li:last-child:after {
+  content: "";
+}
+
+/* line 145, ../sass/styles.scss */
+div.images {
+  position: absolute;
+  z-index: 100;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform-origin-y: 0;
+  -webkit-transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+/* line 153, ../sass/styles.scss */
+div.images:hover {
+  z-index: 200;
+}
+
+/* line 158, ../sass/styles.scss */
+.content {
+  background: #fff;
+  position: absolute;
+  width: 800px;
+  margin-top: 100px;
+  left: 100px;
+  padding-left: 20px;
+  opacity: 0;
+}
+/* line 167, ../sass/styles.scss */
+.content.active {
+  opacity: 1;
+}
+/* line 170, ../sass/styles.scss */
+.content h1 {
+  margin-top: 20px;
+}
+
+/* line 175, ../sass/styles.scss */
+.content.chair {
+  height: 4230px;
+}
+
+/* line 179, ../sass/styles.scss */
+.content.table {
+  height: 3780px;
+}
+
+/* line 183, ../sass/styles.scss */
+.content.watch {
+  height: 3878px;
+}
+
+/* line 187, ../sass/styles.scss */
+.content.glasses {
+  height: 3655px;
+}
+
+/* line 191, ../sass/styles.scss */
+.content.lamp {
+  height: 3878px;
+}
+
+/* line 195, ../sass/styles.scss */
+.content.family {
+  height: 2200px;
+}
+
+/* line 204, ../sass/styles.scss */
+.content ul li {
+  position: relative;
+  display: block;
+  right: 0px;
+  left: 0px;
+  width: 800px;
+  margin-bottom: 20px;
+}
+/* line 211, ../sass/styles.scss */
+.content ul li:last-child {
+  margin-bottom: 100px;
+}
+/* line 214, ../sass/styles.scss */
+.content ul li img {
+  width: 800px;
+}
+
+/* line 222, ../sass/styles.scss */
+.home-images .collection {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 15%;
+}
+/* line 229, ../sass/styles.scss */
+.home-images .collection .collection.active {
+  display: block;
+}
+/* line 232, ../sass/styles.scss */
+.home-images .collection p {
+  border-top: solid 1px white;
+  margin-top: -1px;
+}
+/* line 236, ../sass/styles.scss */
+.home-images .collection .images {
+  display: inline-block;
+  clear: left;
+  position: relative;
+  margin-bottom: 30px;
+  float: left;
+}
+/* line 242, ../sass/styles.scss */
+.home-images .collection .images:last-child {
+  margin-bottom: 300px;
+  display: inline-block;
+}
+/* line 246, ../sass/styles.scss */
+.home-images .collection .images img {
+  display: block;
+}
+
+/* line 259, ../sass/styles.scss */
+h1, h2, h3, h4 {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 265, ../sass/styles.scss */
+p {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 277, ../sass/styles.scss */
+a {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 281, ../sass/styles.scss */
+#page-content {
+  display: none;
+}
+/* line 283, ../sass/styles.scss */
+#page-content.active {
+  display: block;
+}
+
+/* line 288, ../sass/styles.scss */
+#product-content {
+  display: none;
+}
+/* line 290, ../sass/styles.scss */
+#product-content.active {
+  display: block;
+}
+
+/* line 295, ../sass/styles.scss */
+.content.active {
+  border-bottom: solid 500px #e4e4e4;
+}
+/* line 297, ../sass/styles.scss */
+.content.active p {
+  font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 2px;
+  line-height: 34px;
+  width: 780px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* line 313, ../sass/styles.scss */
+.imglink {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  background: #ffffff;
+  top: 0px;
+  left: 0px;
+  padding: 12px 10px 12px 10px;
+  opacity: 0;
+  z-index: 200;
+}
+/* line 325, ../sass/styles.scss */
+.imglink.active {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: none;
+  z-index: 200;
+}
+
+/* line 336, ../sass/styles.scss */
+.close {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  z-index: 5001;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+}
+/* line 347, ../sass/styles.scss */
+.close.active {
+  transition: all 0.5s ease;
+  display: block;
+}
+/* line 357, ../sass/styles.scss */
+.close:after {
+  background-position: 0px -36px;
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+}
+/* line 362, ../sass/styles.scss */
+.close:hover:after {
+  opacity: 1;
+  background-position: 0px -36px;
+  background-color: #e4e4e4;
+}
+
+/* line 369, ../sass/styles.scss */
+.fullscreen {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  display: block;
+  opacity: 0;
+}
+/* line 379, ../sass/styles.scss */
+.fullscreen.active {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #e4e4e4;
+  z-index: 4000;
+  padding-bottom: 200px;
+  overflow-y: scroll;
+}
+/* line 393, ../sass/styles.scss */
+.fullscreen.show {
+  opacity: 1;
+}
+
+/* line 398, ../sass/styles.scss */
+.welcome-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  z-index: 499;
+  opacity: 1;
+  background-color: #fff;
+}
+/* line 411, ../sass/styles.scss */
+.welcome-overlay a {
+  border-bottom: solid 1px #000;
+  padding-bottom: 4px;
+  position: absolute;
+  left: 15%;
+  top: 340px;
+}
+/* line 417, ../sass/styles.scss */
+.welcome-overlay a:hover {
+  color: #d6ba4f;
+  border-bottom: solid 1px #d6ba4f;
+}
+
+/* line 424, ../sass/styles.scss */
+.inside-images {
+  padding-bottom: 200px;
+}
+/* line 426, ../sass/styles.scss */
+.inside-images img {
+  margin-bottom: 18px;
+}
+
+/* line 432, ../sass/styles.scss */
+.text {
+  width: 430px;
+  position: absolute;
+  left: 15%;
+  top: 216px;
+}
+/* line 438, ../sass/styles.scss */
+.text p {
+  line-height: 18px;
+  margin-bottom: 30px;
+  text-transform: none;
+}
+/* line 446, ../sass/styles.scss */
+.text ul li {
+  font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  width: 300px;
+}
+
+/* line 462, ../sass/styles.scss */
+li {
+  list-style: none;
+  width: 100px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+/* line 467, ../sass/styles.scss */
+li a {
+  padding: 5px;
+}
+
+/* line 472, ../sass/styles.scss */
+a.active {
+  color: #d6ba4f;
+}
+
+/* line 476, ../sass/styles.scss */
+.project_bottom {
+  clear: both;
+  height: 60px;
+  margin: 0 0 -120px 0;
+}
+
+@media all and (max-width: 1300px) {
+  /* line 489, ../sass/styles.scss */
+  .collection .top-change {
+    top: -250px;
+  }
+  /* line 493, ../sass/styles.scss */
+  .collection .lamp {
+    top: -250px;
+  }
+  /* line 497, ../sass/styles.scss */
+  .collection .chair {
+    top: -552px;
+  }
+  /* line 501, ../sass/styles.scss */
+  .collection .table {
+    top: -768px;
+  }
+  /* line 505, ../sass/styles.scss */
+  .collection .watch {
+    top: -1026px;
+  }
+  /* line 509, ../sass/styles.scss */
+  .collection .glasses {
+    top: -1327px;
+  }
+
+  /* line 522, ../sass/styles.scss */
+  .home-images .images {
+    -webkit-transform-origin-x: 0;
+    -webkit-transform-origin-y: 0;
+    -webkit-transform: scale(0.7);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+  /* line 528, ../sass/styles.scss */
+  .home-images p {
+    font-size: 19px;
+  }
+
+  /* line 534, ../sass/styles.scss */
+  .imglink {
+    padding: 16px 14px 17px 14px;
+  }
+}
+/* line 541, ../sass/styles.scss */
+.npfooter {
+  position: absolute;
+  left: 810px;
+  z-index: 9999;
+  display: none;
+}
+/* line 546, ../sass/styles.scss */
+.npfooter.active {
+  display: block;
+}
+
+/* line 554, ../sass/styles.scss */
+.share {
+  position: absolute;
+  left: 20px;
+  bottom: 16px;
+}

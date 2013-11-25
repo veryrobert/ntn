@@ -1,68 +1,39 @@
 <?php include('header.php'); ?>
 
-
-<div id="page-content" class="home-images">
-    <div id="guts">
-    	
-    </div>
+<div class="home-images" id="page-content">
+        <div id="guts"></div>
 </div>
-
 
 <div class="fullscreen">
-    
-    <div class="nextandprev">
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a>
-    </div>
+        <div class="nextandprev">
+                <a class="next-button" href="next">Next</a> <a class="prev-button" href="prev">Prev</a>
+        </div>
 
-    <div class="npfooter">
+        <div class="npfooter chair">
+                <a class="next-button" href="next">Next</a> <a class="prev-button" href="prev">Prev</a>
+        </div><a class="close">Close</a>
 
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
+        <section id="product-content">
+                <div class="content chair getHeight" id="guts">
+                        <h1>Dowel Chair</h1>
 
-    </div>
+                        <p>The dowel chair is a modern take on the classic windsor chair. Constructed from solid bleached irish sycamore the seat back consists
+                        of sixteen spindles with a removable fabric cover. On the underside the legs are blended into the seat.</p>
 
-   <div class="npfooter share">
+                        <div class="inside-images">
+                                <img alt="" src="img/inside/chair/chair-7-s.jpg"> <img alt="" src="img/inside/chair/chair-1-s.jpg"> <img alt="" src=
+                                "img/inside/chair/chair-4-s.jpg"> <img alt="" src="img/inside/chair/chair-3-s.jpg"> 
+                                <!-- <img src="img/inside/chair/chair-2-s.jpg" alt=""> -->
+                                 <img alt="" src="img/inside/chair/chair-5-short.jpg"> <img alt="" src="img/inside/chair/chair-6-s.jpg"> 
+                                <!-- <img src="img/inside/chair-06.jpg" alt=""> -->
+                        </div>
 
- <a target="_blank" href="http://twitter.com/share?text=NTN%20—%20Windsor%20Chair%20via%20@madebyntn&url=http://www.ntn.ie/chair.php">
-		Share</a>
-
-
-</div>
-
-
-
-
-
-    <a class="close" >Close</a>
-
-	<section id="product-content">
-		<div id="guts" class="content">
-
-			<h1>Windsor Chair</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				sunt expedita corporis consectetur quia repellat officiis consequatur! 
-				Accusantium, dolor, ducimus pariatur perspiciatis molestiae mollitia beatae eaque 
-				ipsum atque earum consequatur!
-			</p>
-
-			<div class="inside-images" >
-
-				<img src="img/inside/chair-01.jpg" alt="">
-				<img src="img/inside/chair-02.jpg" alt="">
-				<img src="img/inside/chair-03.jpg" alt="">
-				<img src="img/inside/chair-05.jpg" alt="">
-				<img src="img/inside/chair-04.jpg" alt="">
-				<!-- <img src="img/inside/chair-06.jpg" alt=""> -->
-
-				
-				
-
-			</div>
-
-		</div>
-	</section>
+                        <div class="share">
+                                <a href="http://twitter.com/share?text=NTN%20%E2%80%94%20Dowel%20Chair%20via%20@madebyntn&amp;url=http://www.ntn.ie/chair.php"
+                                target="_blank">Share</a> <a class="purchasing" href="purchasing-chair.php">Purchasing</a>
+                        </div>
+                </div>
+        </section>
 </div>
 
 <?php include('footer.php'); ?>

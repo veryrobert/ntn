@@ -12,7 +12,7 @@
     <p>At NTN we design and produce collections of products. These products are connected by design rather than category. This is our first collection.</br>
              
     </p>
-    <a href="#">view collection</a>
+    <a class="link" href="#">view collection</a>
 
     </div>
 

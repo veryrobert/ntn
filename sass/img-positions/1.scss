@@ -1,166 +1,106 @@
-// Image positions 
-
+// Image positions
 
 .home-images {
-
- img { display:none; }
-
+  img {
+    display: none;
+  }
+  //  .glasses-7, .watch-2
+  .lamp-7, .chair-7, .table-5, .chair-5, .glasses-4, .watch-7, .lamp-1,  .table-2, .glasses-7, .watch-2 {
+    img {
+      display: block;
+    }
+  }
 }
 
-.one, .lamp-03, .table-03, .chair-03, .glasses-01, .watch-01 { 
-
-	img {
-		display:block; 
-	}
-
-}
-	
-
-// .family-02 {
-// 	// table 01
-// 	margin-top:4400px; 
-// 	right:0;
-// // right:;
-
-// }
-
-
-// Chair items
-
-
-.chair-01 {
-	// chair 01 
-	margin-top:800px;
-	// left:0;
-	right:0;
-
+.lamp-7 {
+  left: 15%;
 }
 
-.chair-02 {
-	// chair 02 
-	margin-top:0;
-	left:0;
-// right:;
-
+.chair-7 {
+  right: 0%;
+  top: 800px;
 }
 
-.chair-03 {
-	// chair 03
-	margin-top:2000px;
-	// left:0;
-right:10%;
-
+.table-5 {
+  left: 10%;
+  top: 1800px;
 }
 
-
-// glasses items
-
-.glasses-01 {
-	// glasses 01
-	margin-top:2600px;
-	left:0;
-// right:;
-
+.chair-5 {
+  left: 65%;
+  top: 2000px;
 }
 
-.glasses-02 {
-	// glasses 02
-	margin-top:0;
-	left:0;
-// right:;
-
+.glasses-4 {
+  left: 0%;
+  top: 2800px;
 }
 
-.glasses-03 {
-	// glasses 03
-	margin-top:0;
-	left:0;
-// right:;
-
+.watch-7 {
+  left: 33%;
+  top: 3200px;
 }
 
-// Table items
-
-.table-01 {
-	// table 01
-	margin-top:4200px;
-	right:0%;
-// right:;
-
+.lamp-1 {
+  right: 0%;
+  top: 3800px;
 }
 
-.table-02 {
-	// table 02
-	margin-top:0;
-	left:0;
-// right:;
-
+.table-2 {
+  left: 0%;
+  top: 5700px;
 }
 
-.table-03 {
-	// table 03
-	margin-top:1600px;
-	left:10%;
-// right:;
-
+.glasses-7 {
+  left: 60%;
+  top: 6600px;
 }
 
-
-// Watch items
-
-.watch-01 {
-	//  watch 01
-	margin-top:3000px;
-	left:30%;
-// right:;
-
+.watch-2 {
+  left: 15%;
+  top: 7000px;
 }
 
+// Smaller desktop
 
-.watch-02 {
-	// watch 02
-	margin-top:0;
-	left:0;
-// right:;
-
+@media all and (max-width: 1300px) {
+  .lamp-7 {
+    left: 15%;
+  }
+  .chair-7 {
+    left: 40%;
+    top: 600px;
+  }
+  .table-5 {
+    left: 10%;
+    top: 1400px;
+  }
+  .chair-5 {
+    left: 65%;
+    top: 1600px;
+  }
+  .glasses-4 {
+    left: 0%;
+    top: 2200px;
+  }
+  .watch-7 {
+    left: 33%;
+    top: 2400px;
+  }
+  .lamp-1 {
+    right: -20%;
+    top: 2800px;
+  }
+  .table-2 {
+    left: 0%;
+    top: 4400px;
+  }
+  .glasses-7 {
+    left: 60%;
+    top: 5100px;
+  }
+  .watch-2 {
+    left: 15%;
+    top: 5400px;
+  }
 }
-
-.watch-03 {
-	//  watch 03
-	margin-top:0;
-	left:0;
-// right:;
-
-}
-
-// Lamp items
-
-.lamp-01 {
-	// lamp 01
-	margin-top:0;
-	left:0;
-// right:;
-
-
-}
-
-.lamp-02 {
-	// lamp 02
-	margin-top:0;
-	left:0;
-// right:;
-
-}
-
-.lamp-03 {
-	// lamp 03
-	margin-top:0px;
-	left:15%;
-// right:;
-
-}
-
-
-
-
-

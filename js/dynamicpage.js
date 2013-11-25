@@ -1,25 +1,49 @@
 $(document).ready(function () {
 
 
+randomStyle();
+
+$('#page-content').hide().show();
+
+setTimeout(function(){
+
+$('#page-content').show();
+
+pageBits();
+
+}, 300);
 
 
-$(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();      
 
+
+$(".npfooter").css('top', $('.getHeight').innerHeight() + 68).delay(500).fadeIn();      
 
     var pathArray = window.location.pathname.split('/');
     var secondLevel = pathArray[1];
-    var products = ["chair.php", "glasses.php", "family.php", "watch.php", "light.php", "table.php"];
+    var products = ["chair.php", "glasses.php", "family.php", "watch.php", "lamp.php", "table.php"];
+    var collection = 'collection.php';
 
-    console.log(secondLevel);
-    console.log(products);
+
+    $('#pages a[href="'+ secondLevel +'"]').addClass('active');
 
     if ($.inArray(secondLevel, products) > -1) {
-
         $('.content, .fullscreen, .nextandprev, .npfooter, #product-content, .close').addClass('active');
-
+        $('body').addClass('overlay');
     }
-    else {
 
+
+console.log(pathArray[1]);
+console.log(collection);
+
+    if (pathArray[1] == collection) {
+       console.log('true');
+
+    $(".close").attr("href", collection);
+
+    } else {
+    
+    $(".close").attr("href", 'index.php');
+    
     }
 
 
@@ -28,7 +52,7 @@ $(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();
 
     cookieStuff(1);
 
-    $(".close").attr("href", 'index.php');
+
 
     if ($("#homepage-flag").length > 0) {
         $.removeCookie('lastclicked');
@@ -54,8 +78,11 @@ $(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();
 
 
 
-    $('a.next-button, a.prev-button').click(function (e) {
-        e.preventDefault();
+
+
+
+    $('a.next-button, a.prev-button').click(function(event) {
+        event.preventDefault();
 
         var $el = $('#pages a.active').removeClass('active');
         var $next = $el.parent().next();
@@ -67,7 +94,7 @@ $(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();
         } else {
            setTimeout(function () {
                 $('.fullscreen').scrollTop(0);
-                console.log('yolo');
+                // console.log('yolo');
            }, 300);
         }
 
@@ -88,27 +115,27 @@ $(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();
 
         }
 
+        $('link.random').remove();
 
         history.pushState(null, null, _link);
 
         Loadnext(_link);
 
 
-
     });
-
-
-
-
 
     // - - - - - - - - - - - - - - - - Page bits and click function below – - - - - - - - - - - - - - //    
 
 
-$('#page-content').hide().fadeIn('fast');
 
-    pageBits();
 
-});
+}); // this is the end of document ready
+
+
+
+
+
+//  Fucntions below here
 
 
 // variables
@@ -129,23 +156,31 @@ var newHash        = '';
 
 //  functions for page loads
 
-function pageLoad(linkPage) {
+   function pageLoad(linkPage) {
 
 $('#page-content').fadeOut(function(){
+$(window).trigger('resize');
+        
+$('link.random').remove();
 
     history.pushState(null, null, linkPage);
     $("#page-content").load(linkPage + " #guts", function () {
-        // $('.collection').addClass('active');
+
         $('.content, .close, .nextandprev, .npfooter, #product-content').removeClass('active');
+
+            randomStyle();  
 
         $('#page-content').fadeIn(300, function(){
 
             pageBits();
+        
+            $(window).data('plugin_stellar').destroy();
+            $(window).data('plugin_stellar').init();
+            $(window).trigger('resize');
+        
 
         });
-
     });
-
 });
 
 }
@@ -153,13 +188,18 @@ $('#page-content').fadeOut(function(){
 // Products
 
 function productLoad(linkPage) {
+
     $('#page-content, .logo, #main-nav').fadeOut(300, function () {
         
+        $('link.random').remove();
+
         $('body').addClass('overlay');
         
         history.pushState(null, null, linkPage);
         
         $("#product-content").load(linkPage + " #guts", function () {
+
+             $('.fullscreen').scrollTop(0);
             
             $('.content, .close, .nextandprev, .npfooter, #product-content').addClass('active').hide();
             
@@ -167,7 +207,8 @@ function productLoad(linkPage) {
 
                 $('.content, .close, .nextandprev, #product-content').fadeIn(function () {
 
-                    $(".npfooter").css('top', $('.content').innerHeight() + 68).delay(500).fadeIn();                                     
+                    $(".npfooter").css('top', $('.getHeight').innerHeight() + 68).delay(500).fadeIn(); 
+
                 });
             });
         });
@@ -180,12 +221,16 @@ function Loadnext(linkPage) {
 
     $('.content, .nextandprev, .npfooter, #product-content').fadeOut(function () {
 
+
         history.pushState(null, null, linkPage);
         $("#product-content").load(linkPage + " #guts", function () {
             $('.content, .nextandprev, .npfooter, #product-content').addClass('active').fadeIn();
+            $(".npfooter").css('top', $('.getHeight').innerHeight() + 68).delay(500).fadeIn();
 
         });
     });
+
+
 }
 
 
@@ -197,6 +242,7 @@ function pageBits() {
         $(".lazy").lazyload({
             effect: "fadeIn",
             effectspeed: 500,
+             // skip_invisible : false,
             failure_limit: 15
         });
         $(window).trigger('resize');
@@ -205,6 +251,7 @@ function pageBits() {
     $.stellar({
         horizontalScrolling: false,
         verticalOffset: 0,
+        parallaxBackgrounds: false,
         responsive: false
     });
     // Hover for images
@@ -213,7 +260,6 @@ function pageBits() {
     }, function () {
         $('.imglink').removeClass('active');
     });
-
 
 }
 
@@ -247,9 +293,12 @@ function cookieStuff(duration) {
 
 
 
-$(document).on('click', '.link, .pages', function () {
+$(document).on('click', '.link, .pages', function(event) {
 
     var linkPage = $(this).attr('href');
+
+    event.preventDefault();
+
 
     if ($(this).hasClass('pages')) {
 
@@ -258,17 +307,19 @@ $(document).on('click', '.link, .pages', function () {
             $('body').animate({
                 scrollTop: 0
             }, 500, function () {
-                
-                pageLoad(linkPage);
-
-            });
-        }
-        else {
             
             pageLoad(linkPage);
+            
+            });
+        }
+        else {     
+            
+            pageLoad(linkPage);
+
         }
 
     }
+
     else {
 
         // PRODUCT specific code
@@ -279,24 +330,22 @@ $(document).on('click', '.link, .pages', function () {
             productLoad(linkPage);
             });
         }
+
         else {
             productLoad(linkPage);
         }
 
     }
 
-    return false;
 
 });
 
-
-// $(document).on('DOMNodeInserted', '#page-content', function () {
-//     pageBits();
-// });
-
 //  closing ajax elements
 
-$(document).on('click', '.close', function () {
+$(document).on('click', '.close', function (event) {
+
+event.preventDefault();
+$('link.random').remove();
 
     _link = $('.close').attr('href');
 
@@ -304,6 +353,8 @@ $(document).on('click', '.close', function () {
         $fullscreen.removeClass('active');
         $('.content, .close, .nextandprev, .npfooter, #product-content').removeClass('active');
         $('body').removeClass('overlay');
+
+randomStyle();
 
         history.pushState(null, null, _link);
         $("#page-content").load(_link + " #guts", function () {
@@ -316,15 +367,88 @@ $(document).on('click', '.close', function () {
                     effectspeed: 500,
                     failure_limit: 15
                 });
-                $(window).trigger('resize');
-            });
 
+                $(window).trigger('resize');
+                $(window).data('plugin_stellar').destroy();
+                $(window).data('plugin_stellar').init();
+
+            });
 
         });
 
     });
-    return false;
+
 });
+
+
+// $(document).on('click', '.purchasing', function () {
+
+// $('link.random').remove();
+
+//     _link = $('.purchasing').attr('href');
+
+//         $fullscreen.fadeOut(function () {
+//         $fullscreen.removeClass('active');
+//         $('.content, .close, .nextandprev, .npfooter, #product-content').removeClass('active');
+//         $('body').removeClass('overlay');
+
+// randomStyle();
+
+//         history.pushState(null, null, _link);
+//         $("#page-content").load(_link + " #guts", function () {
+            
+//             $('#main-nav, .logo, #page-content').fadeIn();
+
+//             $(function () {
+//                 $(".lazy").lazyload({
+//                     effect: "fadeIn",
+//                     effectspeed: 500,
+//                     failure_limit: 15
+//                 });
+
+//                 $(window).trigger('resize');
+//                 $(window).data('plugin_stellar').destroy();
+//                 $(window).data('plugin_stellar').init();
+
+//             });
+
+//         });
+
+//     });
+
+//     return false;
+// });
+
+
+
+
+function randomStyle() {
+
+var link = [];
+link[0] = "<link rel='stylesheet'  href='/css/img-positions/1.css' type='text/css' media='screen' class='random' />";
+link[1] = "<link rel='stylesheet'  href='/css/img-positions/2.css' type='text/css' media='screen' class='random' />";
+link[2] = "<link rel='stylesheet'  href='/css/img-positions/3.css' type='text/css' media='screen' class='random' />";
+link[3] = "<link rel='stylesheet'  href='/css/img-positions/4.css' type='text/css' media='screen' class='random' />";
+link[4] = "<link rel='stylesheet'  href='/css/img-positions/5.css' type='text/css' media='screen' class='random' />";
+
+  if($("body").size()>0){
+
+    var style = link[Math.floor(Math.random() * link.length )];
+
+            if (document.createStyleSheet){
+                document.createStyleSheet('style.css');
+            }
+            else {
+                style
+                $("head").append($(style));
+
+    }
+
+};
+
+
+}
+ 
 
 
 

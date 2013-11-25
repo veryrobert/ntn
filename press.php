@@ -2,7 +2,7 @@
 <?php include('header.php'); ?>
 
 
-<div id="page-content" class="home-images">
+<div id="page-content" class="home-images" >
     <div id="guts">
 
 
@@ -12,7 +12,7 @@
     <p>Press At NTN we design and produce collections of products. These products are connected by design rather than category. This is our first collection.</br>
              
     </p>
-    <a href="#">view collection</a>
+    <a href="#">Download press pack</a>
 
     </div>
 

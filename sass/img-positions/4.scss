@@ -1,38 +1,113 @@
-// Image positions 
+// Image positions
 
-.one {
-margin-top: 800px;
-	left: 50%;
+.home-images {
+  img {
+    display: none;
+  }
+  .table-2, .table-5, .chair-1, .glasses-3, .watch-4, .lamp-4, .collection-4, .chair-5, .table-4 {
+    img {
+      display: block;
+    }
+  }
+}
 
-	}
+.table-2 {
+  left: 0%;
+}
+
+.table-5 {
+  right: 0%;
+  top: 900px;
+}
+
+.chair-1 {
+	left:25%;
+	top:1600px;
+}
+
+.glasses-3 {
+	left:15%;
+	top:2600px;
+}
+
+.watch-4 {
+	left:40%;
+	top:3400px;
+}
 
 
-.two {
+.lamp-4 {
 
-margin-top: 500px;
-	left: 80%;
+left:15%;
+top:4500px;
 
-	}
+}
+
+.collection-4 {
+left:0%;
+top:5000px;
+}
+
+.chair-5 {
+left:55%;
+top:5800px;
+}
+
+.table-4 {
+left:15%;
+top:7200px;
+}
 
 
-.three {
-margin-top: 1400px;
-	left: 60%;
-
-	}
 
 
-.four {
-margin-top: 2000px;
-	left: 0%;
+@media all and (max-width: 1300px) { 
 
-	}
- 
+.table-2 {
+  left: 0%;
+}
 
-.five {
-margin-top: 2800px;
-	left: 40%;
+.table-5 {
+  right: -20%;
+  top: 700px;
+}
 
-	}
+.chair-1 {
+  left:25%;
+  top:1400px;
+}
 
- 
+.glasses-3 {
+  left:15%;
+  top:2200px;
+}
+
+.watch-4 {
+  left:40%;
+  top:2900px;
+}
+
+
+.lamp-4 {
+
+left:15%;
+top:3600px;
+
+}
+
+.collection-4 {
+left:0%;
+top:3900px;
+}
+
+.chair-5 {
+left:55%;
+top:4600px;
+}
+
+.table-4 {
+left:15%;
+top:5600px;
+}
+
+}

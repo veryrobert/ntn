@@ -1,7 +1,6 @@
 <?php include('header.php'); ?>
 
 
-
 <div id="page-content" class="home-images">
     <div id="guts">
     	
@@ -9,46 +8,58 @@
 </div>
 
 
-<div class="fullscreen active">
-
-    <a class="close active" >Close</a>
-
-	<section id="product-content active">
-
+<div class="fullscreen">
     
-    <div class="nextandprev active">
+    <div class="nextandprev">
         <a class="next-button" href="next">Next</a>
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-		<div id="guts" class="content active">
+    <div class="npfooter chair">
+
+        <a class="next-button" href="next">Next</a>
+        <a class="prev-button" href="prev">Prev</a> 
+
+    </div>
+
+
+
+
+    <a class="close" >Close</a>
+
+	<section id="product-content">
+		<div id="guts" class="content family getHeight">
 
 			<h1>Collection 01</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				sunt expedita corporis consectetur quia repellat officiis consequatur! 
-				Accusantium, dolor, ducimus pariatur perspiciatis molestiae mollitia beatae eaque 
-				ipsum atque earum consequatur!
+				The dowel chair is a modern take on the classic windsor chair. 
+				Constructed from solid bleached irish sycamore the seat back consists of sixteen spindles with 
+				a removable fabric cover. On the underside the legs are blended into the seat.
 			</p>
 
-			<div class="inside-images">
+			<div class="inside-images" >
 
-				<img src="img/inside-01.png" alt="">
-				<img src="img/inside-02.png" alt="">
-				<img src="img/inside-01.png" alt="">
-				<img src="img/inside-01.png" alt="">
-				<img src="img/inside-02.png" alt="">
+					<img src="img/inside/family/family-3-s.jpg" alt="">
+				<img src="img/inside/family/family-1-s.jpg" alt="">
+				<img src="img/inside/family/family-2-s.jpg" alt="">
+	
 
 			</div>
 
+
+   <div class="share">
+
+ <a target="_blank" href="http://twitter.com/share?text=NTN%20—%20Dowel%20Chair%20via%20@madebyntn&url=http://www.ntn.ie/chair.php">
+		Share</a>
+
+</div>
+
+
+
 		</div>
-
-		   <div class="npfooter active">
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
-    </div>
-
 	</section>
 </div>
 
 <?php include('footer.php'); ?>
+
+
