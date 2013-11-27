@@ -2,9 +2,6 @@
 
 
 <div id="page-content" class="home-images">
-	<div id="guts">
-
-	</div>
 </div>
 
 <div class="fullscreen">
@@ -14,17 +11,16 @@
 		<a class="prev-button" href="prev">Prev</a>
 	</div>
 
-	<div class="npfooter">
-		<a class="next-button" href="next">Next</a>
-		<a class="prev-button" href="prev">Prev</a> 
-	</div>
-
+    <div class="npfooter">
+        <a class="next-footer" href="next">Next</a>
+        <a class="prev-footer" href="prev">Prev</a> 
+    </div>
 
 
 		<a class="close" >Close</a>
 
 		<section id="product-content">
-			<div id="guts" class="content getHeight lamp" >
+			<div id="product-guts" class="content getHeight lamp" >
 
 				<h1>Waterford Lamp</h1>
 				<p>

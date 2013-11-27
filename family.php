@@ -2,9 +2,6 @@
 
 
 <div id="page-content" class="home-images">
-    <div id="guts">
-    	
-    </div>
 </div>
 
 
@@ -15,20 +12,15 @@
         <a class="prev-button" href="prev">Prev</a>
     </div>
 
-    <div class="npfooter chair">
-
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
-
+    <div class="npfooter">
+        <a class="next-footer" href="next">Next</a>
+        <a class="prev-footer" href="prev">Prev</a> 
     </div>
-
-
-
 
     <a class="close" >Close</a>
 
 	<section id="product-content">
-		<div id="guts" class="content family getHeight">
+		<div id="product-guts" class="content family getHeight">
 
 			<h1>Collection 01</h1>
 			<p>
@@ -39,10 +31,9 @@
 
 			<div class="inside-images" >
 
-					<img src="img/inside/family/family-3-s.jpg" alt="">
+				<img src="img/inside/family/family-3-s.jpg" alt="">
 				<img src="img/inside/family/family-1-s.jpg" alt="">
 				<img src="img/inside/family/family-2-s.jpg" alt="">
-	
 
 			</div>
 

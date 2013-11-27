@@ -2,9 +2,6 @@
 
 
 <div id="page-content" class="home-images">
-    <div id="guts">
-    	
-    </div>
 </div>
 
 
@@ -16,17 +13,16 @@
     </div>
 
     <div class="npfooter">
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-footer" href="next">Next</a>
+        <a class="prev-footer" href="prev">Prev</a> 
     </div>
-
 
 
 
     <a class="close" >Close</a>
 
 	<section id="product-content">
-		<div id="guts" class="content watch getHeight">
+		<div id="product-guts" class="content watch getHeight">
 
 			<h1>w1 watch</h1>
 			<p>
@@ -49,6 +45,8 @@
 
  <a target="_blank" href="http://twitter.com/share?text=NTN%20—%20w1%20watch%20via%20@madebyntn&url=http://www.ntn.ie/watch.php">
 		Share</a>
+
+		<a class="purchasing" href="purchasing-watch.php">Purchasing</a>
 
 </div>
 

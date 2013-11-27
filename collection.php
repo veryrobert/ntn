@@ -23,7 +23,7 @@
         <div class="images chair">
             <a class="link" href="chair.php">
                 <p class="imglink ">chair</p>
-                <img src="img/white.png" class="lazy" data-original="img/chair-01.jpg" height="686" width="1060" alt="">
+                <img src="img/white.png" class="lazy" data-original="img/shots/chair-1.jpg" height="1200" width="800" alt="">
             </a>
         </div>
 
@@ -31,22 +31,22 @@
         <div class="images table">
             <a class="link" href="table.php">
                 <p class="imglink ">table</p>
-                <img src="img/white.png" class="lazy" data-original="img/table-01.jpg" height="828" width="1218" alt="">
+                <img src="img/white.png" class="lazy" data-original="img/shots/table-2.jpg" height="800" width="1200" alt="">
             </a>
         </div>
 
         <div class="images watch">
             <a class="link" href="watch.php">
                 <p class="imglink ">watch</p>
-                <img src="img/white.png" class="lazy" data-original="img/watch-01.jpg" height="971" width="682" alt="">
+                <img src="img/white.png" class="lazy" data-original="img/shots/watch-7.jpg" height="900" width="600" alt="">
             </a>
         </div>
 
 
         <div class="images glasses">
             <a class="link" href="glasses.php">
-                <p class="imglink ">sun glasses</p>
-                <img src="img/white.png" class="lazy" data-original="img/glasses-01.jpg" height="503" width="776" alt="">
+                <p class="imglink ">g1 glasses</p>
+                <img src="img/white.png" class="lazy" data-original="img/shots/glasses-1.jpg" height="800" width="1200" alt="">
             </a>
         </div>
 
@@ -69,7 +69,6 @@
     <a class="close" href="">Close</a>
 
     <section id="product-content">
-        <div class="content" id="guts"></div>
     </section>
 
 </div>

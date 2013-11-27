@@ -17,13 +17,21 @@
         At ntn we design and produce collections of products. These products are connected by design rather than category. This is our first collection.</br>     
     </p>
 
-<p>
+
       <ul>
         <li>t. +353 (0)  1 906 0179</li>
         <li>e. <a href="mailto:info@ntn.ie?subject=collection%20one">info@ntn.ie</a></li>
-        <li>f. <a target="_blank" href="http://www.twitter.com/madebyntn">@madebyntn</a></li>
+        <li>t. <a target="_blank" href="http://www.twitter.com/madebyntn">@madebyntn</a></li>
     </ul>
     </p>
+
+ 
+         <ul style="margin-top:90px;">
+        <li>Photography: <a target="_blank" href="http://www.twitter.com/madebyntn">Richard Gilligan</a></li>
+        <li>Design + Development: <a target="_blank" href="http://www.twitter.com/madebyntn">Robert Farrelly</a></li>
+       
+    </ul>  
+   
 
         
     

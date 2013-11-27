@@ -8,10 +8,11 @@
 @import "compass/css3/transition";
 @import "variables";
 
-// Other stylesheets
-@import "type";
+$black: black;
 
-// @import "img-positions/_one.scss";
+// - - - - - - - - - - - - - Type Variables - - - - - - - - - - - - - - - - - //
+
+$monospace: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
 
 // - - - - - - - - - - - - - Mixins Styles - - - - - - - - - - - - - - - - //
 
@@ -30,37 +31,44 @@
   text-indent: -9999px;
 }
 
-
 @mixin sprite-hover {
   opacity: 1;
 }
 
 // - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - - - //
 
+* {
+  outline: none;
+  border: 0px;
+  text-shadow: 0px;
+}
+
 // Body & Wrap
 
-body {
+body.home {
   width: 100%;
-  min-height: 9000px;
   &.overlay {
     height: 100%;
     overflow: hidden;
   }
 }
 
+body.home {
+  height: 9000px;
+}
+
+body.collection {
+  height: 5000px;
+}
+
 // Logo
 
-.logo {
+#logo {
   position: fixed;
   z-index: 500;
   left: 5%;
   top: 220px;
-  background-image: url("../img/low-res/logo.png");
-  background-image: url("../img/logo.svg"), none;
-  width: 56px;
-  height: 19px;
-  text-indent: 3000px;
-  overflow: hidden;
+  shape-rendering: geometricPrecision;
 }
 
 // Links
@@ -77,10 +85,21 @@ nav {
   position: fixed;
   z-index: 300;
   right: 0px;
+  border: none;
+
+  @media all and (max-width: 400px) { 
+
+  left: 0px;
+
+  }
+
 }
 
 #pages {
   display: none;
+  position: fixed;
+  left: 0px;
+  z-index: 9999;
 }
 
 .nextandprev {
@@ -97,10 +116,11 @@ nav {
   }
 }
 
-.next-button {
+.next-button, .next-footer {
   padding-right: 20px;
   &:after {
     // content: " ";
+ 
   }
 }
 
@@ -110,17 +130,41 @@ nav {
   padding: 13px 12px 13px 15px;
   letter-spacing: 0.5px;
   font-size: 13px;
+
+  @media all and (max-width: 400px) {  
+
+    padding: 13px 12px 13px 15px;
+
+  }
+
   li {
+
     @include monospace;
     display: inline;
     margin-right: 12px;
+
+     @media all and (max-width: 400px) {  
+
+      margin-right:14px;
+
+     }
+
     a {
       color: $black;
       text-decoration: none;
       @include transition(all 0.3s ease-in-out);
       border-bottom: solid 1px #fff;
       padding: 0px;
+
       margin: 6px;
+      
+         @media all and (max-width: 400px) {  
+
+     margin: 0px;
+
+    }
+
+
       &:hover {
         border-bottom: solid 1px #e5cd65;
         @include transition(all 0.3s ease-in-out);
@@ -145,11 +189,10 @@ nav {
 div.images {
   position: absolute;
   z-index: 100;
-    -webkit-transform-origin-x: 0;
-    -webkit-transform-origin-y: 0;
-    -webkit-transform: scale(1);
-    @include transition(transform 0.3s ease-in-out);
-
+  -webkit-transform-origin-x: 0;
+  -webkit-transform-origin-y: 0;
+  -webkit-transform: scale(1);
+  @include transition(transform 0.3s ease-in-out);
   &:hover {
     z-index: 200;
   }
@@ -163,7 +206,6 @@ div.images {
   left: 100px;
   padding-left: 20px;
   opacity: 0;
-
   &.active {
     opacity: 1;
   }
@@ -196,9 +238,6 @@ div.images {
   height: 2200px;
 }
 
-
-
-
 .content {
   ul {
     li {
@@ -223,9 +262,7 @@ div.images {
     position: absolute;
     margin-top: 220px;
     margin-left: 15%;
-    .imglink {
-   
-    }
+    .imglink {}
     .collection.active {
       display: block;
     }
@@ -264,14 +301,7 @@ h1, h2, h3, h4 {
 
 p {
   @include monospace;
-
-@media all and (max-width: 1400px) {
-
-
-
-}
-
-
+  @media all and (max-width: 1400px) {}
 }
 
 a {
@@ -345,15 +375,10 @@ a {
   background-image: url("../img/low-res/close.png");
   background-image: url("../img/close.svg"), none;
   &.active {
-
     transition: all 0.5s ease;
     display: block;
-
- 
   }
-  &:hover {
- 
-  }
+  &:hover {}
   &:after {
     background-position: 0px -36px;
     background-image: url("../img/low-res/close.png");
@@ -405,12 +430,9 @@ a {
   z-index: 499;
   opacity: 1;
   background-color: #fff;
-
-
   a {
     border-bottom: solid 1px #000;
     padding-bottom: 4px;
-
     &:hover {
       color: #d6ba4f;
       border-bottom: solid 1px #d6ba4f;
@@ -425,64 +447,44 @@ a {
   }
 }
 
-
 .text {
   width: 430px;
   position: fixed;
   left: 15%;
   top: 216px;
-
-
-@media all and (max-width: 550px) {
-
- width: auto;
-  position: absolute;
-  left: 5%;
-  top: 316px;
-
-}  
-
+  @media all and (max-width: 600px) {
+    width: auto;
+    position: absolute;
+    left: 5%;
+    top: 316px;
+  }
   p {
     line-height: 18px;
     margin-bottom: 30px;
     text-transform: none;
   }
-
-ul {
-
-li {
-
-  @include monospace;
-  display: block;
-  width:auto;
-margin-bottom:10px;
-
-letter-spacing: 0.5px;
-
-a { 
-  padding: 0px;
-  padding-bottom: 0px;
-  letter-spacing: 1px;
-
- @include transition(all 0.3s ease-in-out);
-
-   &:hover {
-      color: #d6ba4f;
-      border-bottom: solid 1px #d6ba4f;
-      padding-bottom: px;
-       @include transition(all 0.3s ease-in-out);
-
+  ul {
+    li {
+      @include monospace;
+      display: block;
+      width: auto;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      a {
+        padding: 0px;
+        padding-bottom: 0px;
+        letter-spacing: 1px;
+        @include transition(all 0.3s ease-in-out);
+        &:hover {
+          color: #d6ba4f;
+          border-bottom: solid 1px #d6ba4f;
+          padding-bottom: px;
+          @include transition(all 0.3s ease-in-out);
+        }
+      }
     }
-
+  }
 }
-
-}
-
-}
-
-
-}
-
 
 // - - - - - - - - - - - - - Fixes & Classes - - - - - - - - - - - - - - - - //
 
@@ -508,69 +510,10 @@ a.active {
 
 // - - - - - - - - - - - - - Media queries - - - - - - - - - - - - - - - - //
 
-@media all and (max-width: 1300px) {
-
-
-.collection {
-
-.top-change { 
-  top: -250px;
-}
-
-.lamp { 
-  top: -250px;
-}
-
-.chair { 
-  top: -552px;
-}
-
-.table { 
-  top: -768px;
-}
-
-.watch { 
-  top: -1026px;
-}
-
-.glasses { 
-  top: -1327px;
-}
-
-
-
-}
-
-  body {
-      // min-height: 7000px;
- 
-  }
-  .home-images {
-    .images {
-      -webkit-transform-origin-x: 0;
-      -webkit-transform-origin-y: 0;
-      -webkit-transform: scale(0.7);
-      @include transition(transform 0.3s ease-in-out);
-    }
-    p {
-      font-size: 19px;
-
-    }
-
-
-
-  }
-
-.imglink {   padding: 16px 14px 17px 14px; }
-
-
-}
-
-
 .text {
-
-font-size:13px;
-
+  p {
+    font-size: 13px;
+  }
 }
 
 .npfooter {
@@ -581,33 +524,84 @@ font-size:13px;
   &.active {
     display: block;
   }
-
-
 }
 
 .share {
-  position:absolute;
+  position: absolute;
   left: 20px;
   bottom: 16px;
 }
 
-.purchasing { margin-left:20px;}
-
+.purchasing {
+  margin-left: 20px;
+}
 
 a:hover {
   color: #d6ba4f;
 }
 
 .images {
-
   a:hover {
-  color: #000;
+    color: #000;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  body.collection {
+    height: 3000px;
+    #guts {
+      height: 4200px;
+    }
+  }
+  .home-images {
+    .images {
+      -webkit-transform-origin-x: 0;
+      -webkit-transform-origin-y: 0;
+      -webkit-transform: scale(0.7);
+      @include transition(transform 0.3s ease-in-out);
+    }
+    p {
+      font-size: 19px;
+    }
+  }
+  .collection {
+    .top-change {
+      top: -250px;
+    }
+    .lamp {
+      top: -250px;
+    }
+    .chair {
+      top: -552px;
+    }
+    .table {
+      top: -922px;
+    }
+    .watch {
+      top: -1172px;
+    }
+    .glasses {
+      top: -1452px;
+    }
+  }
+  .imglink {
+    padding: 16px 14px 17px 14px;
+  }
+
+.text {
+  p {
+    font-size: 13px;
+  }
 }
 
 }
 
 
 
+@media all and (max-width: 800px) { 
 
+  
+
+}
 
 

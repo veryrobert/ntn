@@ -64,62 +64,62 @@
 }
 
 @media all and (max-width: 1300px) {
-  /* line 66, ../../sass/img-positions/2.scss */
+  /* line 67, ../../sass/img-positions/2.scss */
   .glasses-6 {
     left: 40%;
   }
 
-  /* line 70, ../../sass/img-positions/2.scss */
+  /* line 71, ../../sass/img-positions/2.scss */
   .watch-3 {
     left: 5%;
     top: 700px;
   }
 
-  /* line 75, ../../sass/img-positions/2.scss */
+  /* line 76, ../../sass/img-positions/2.scss */
   .chair-4 {
     left: 60%;
     top: 1250px;
     z-index: 200 !important;
   }
 
-  /* line 81, ../../sass/img-positions/2.scss */
+  /* line 82, ../../sass/img-positions/2.scss */
   .lamp-2 {
     left: 28%;
     top: 1900px;
     z-index: 0;
   }
 
-  /* line 87, ../../sass/img-positions/2.scss */
+  /* line 88, ../../sass/img-positions/2.scss */
   .table-1 {
     left: 0%;
     top: 2600px;
   }
 
-  /* line 92, ../../sass/img-positions/2.scss */
+  /* line 93, ../../sass/img-positions/2.scss */
   .table-3 {
     right: 5%;
     top: 3200px;
   }
 
-  /* line 97, ../../sass/img-positions/2.scss */
+  /* line 98, ../../sass/img-positions/2.scss */
   .chair-6 {
     right: 33%;
     top: 4000px;
   }
 
-  /* line 102, ../../sass/img-positions/2.scss */
+  /* line 103, ../../sass/img-positions/2.scss */
   .lamp-3 {
     left: 0%;
-    top: 5000px;
+    top: 5600px;
   }
 
-  /* line 107, ../../sass/img-positions/2.scss */
+  /* line 108, ../../sass/img-positions/2.scss */
   .glasses-2 {
     left: 35%;
     top: 6000px;
   }
 
-  /* line 113, ../../sass/img-positions/2.scss */
+  /* line 114, ../../sass/img-positions/2.scss */
   body {
     min-height: 7400px;
   }

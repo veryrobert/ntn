@@ -2,16 +2,15 @@
 
  <!-- Closing of wrap from header -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-          <script type='text/javascript' src='js/dynamicpage.js'></script> 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/jquery.lazyload.min.js?v=1.8.5" charset="utf-8"></script>
-        <script src="js/jquery.stellar.min.js" charset="utf-8"></script>
-        <script src="js/jquery.cookie.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-   
-    
-         <!-- <script src="js/plugins.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.lazyload.min.js?v=1.8.5" charset="utf-8"></script>
+<script src="js/jquery.stellar.min.js" charset="utf-8"></script>
+<script src="js/jquery.cookie.js"></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script> 
+
+<script type='text/javascript' src='js/mobile.js'></script> 
+<script type='text/javascript' src='js/plugins.js'></script> 
+			
    
     </body>
 </html>

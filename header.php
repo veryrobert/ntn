@@ -13,20 +13,14 @@
         
         <link rel="stylesheet" href="css/styles.css"> 
        <link rel="img-position" href="style" type="text/css"/>
-
-
-
-        <!-- <link href="/css/img-positions/2.css" rel="stylesheet" type="text/css"/> -->
        <script src="js/modernizr.js"></script>
     </head>
     <body>
       
 <header>
    
-    
-<a class="pages logoLink"  href="/"><div class="logo"></div></a>
 
-
+<a class="pages" id="logo" href="/"></a>
 
 
 <nav id="main-nav">
@@ -40,12 +34,12 @@
 
 <nav id="pages">
 <ul>
-  <li><a href="family.php" class="link overlay">Collection</a></li>
-  <li><a href="chair.php" class="link overlay">chair</a></li>
-  <li><a href="table.php" class="link overlay">table</a></li>
-  <li><a href="watch.php" class="link overlay">watch</a></li>
-  <li><a href="glasses.php" class="link overlay">glasses</a></li>
-  <li><a href="lamp.php" class="link overlay">light</a></li>
+  <li><a href="family.php" class="link">Collection</a></li>
+  <li><a href="chair.php" class="link">chair</a></li>
+  <li><a href="table.php" class="link">table</a></li>
+  <li><a href="watch.php" class="link">watch</a></li>
+  <li><a href="glasses.php" class="link">glasses</a></li>
+  <li><a href="lamp.php" class="link">light</a></li>
 </ul>
 </nav>
  

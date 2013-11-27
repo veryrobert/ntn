@@ -3,9 +3,6 @@
 
 
 <div id="page-content" class="home-images">
-    <div id="guts">
-    	
-    </div>
 </div>
 
 
@@ -17,18 +14,15 @@
     </div>
 
     <div class="npfooter">
-        <a class="next-button" href="next">Next</a>
-        <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-footer" href="next">Next</a>
+        <a class="prev-footer" href="prev">Prev</a> 
     </div>
-
-
-
 
 
     <a class="close active" href="/">Close</a>
 
 	<section id="product-content">
-		<div id="guts" class="content glasses getHeight">
+		<div id="product-guts" class="content glasses getHeight">
 
 			<h1>G1 glasses</h1>
 			<p>

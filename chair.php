@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 <div class="home-images" id="page-content">
-        <div id="guts"></div>
+
 </div>
 
 <div class="fullscreen">
@@ -9,12 +9,15 @@
                 <a class="next-button" href="next">Next</a> <a class="prev-button" href="prev">Prev</a>
         </div>
 
-        <div class="npfooter chair">
-                <a class="next-button" href="next">Next</a> <a class="prev-button" href="prev">Prev</a>
-        </div><a class="close">Close</a>
+    <div class="npfooter">
+        <a class="next-footer" href="next">Next</a>
+        <a class="prev-footer" href="prev">Prev</a> 
+    </div>
+
+        <a class="close">Close</a>
 
         <section id="product-content">
-                <div class="content chair getHeight" id="guts">
+                <div id="product-guts" class="content chair getHeight">
                         <h1>Dowel Chair</h1>
 
                         <p>The dowel chair is a modern take on the classic windsor chair. Constructed from solid bleached irish sycamore the seat back consists
