@@ -6,14 +6,14 @@
 
 <div class="fullscreen">
 
-	<div class="nextandprev">
-		<a class="next-button" href="next">Next</a>
-		<a class="prev-button" href="prev">Prev</a>
-	</div>
+	    <div class="nextandprev">
+    	<a class="prev-button" href="prev">Prev</a>
+        <a class="next-button" href="next">Next</a>
+    </div>
 
     <div class="npfooter">
+    	 <a class="prev-footer" href="prev">Prev</a> 
         <a class="next-footer" href="next">Next</a>
-        <a class="prev-footer" href="prev">Prev</a> 
     </div>
 
 

@@ -1,0 +1,187 @@
+/* line 4, ../../sass/img-positions/1.scss */
+.home-images img {
+  display: none;
+}
+/* line 9, ../../sass/img-positions/1.scss */
+.home-images .lamp-7 img, .home-images .chair-7 img, .home-images .table-5 img, .home-images .chair-5 img, .home-images .glasses-4 img, .home-images .watch-7 img, .home-images .lamp-1 img, .home-images .table-2 img, .home-images .glasses-7 img, .home-images .watch-2 img {
+  display: block;
+}
+
+/* line 15, ../../sass/img-positions/1.scss */
+.lamp-7 {
+  left: 15%;
+}
+
+/* line 19, ../../sass/img-positions/1.scss */
+.chair-7 {
+  right: 0%;
+  top: 800px;
+}
+
+/* line 24, ../../sass/img-positions/1.scss */
+.table-5 {
+  left: 10%;
+  top: 1800px;
+}
+
+/* line 29, ../../sass/img-positions/1.scss */
+.chair-5 {
+  left: 65%;
+  top: 2200px;
+}
+
+/* line 34, ../../sass/img-positions/1.scss */
+.glasses-4 {
+  left: 0%;
+  top: 3200px;
+}
+
+/* line 39, ../../sass/img-positions/1.scss */
+.watch-7 {
+  left: 33%;
+  top: 3600px;
+}
+
+/* line 44, ../../sass/img-positions/1.scss */
+.lamp-1 {
+  right: 0%;
+  top: 4000px;
+}
+
+/* line 49, ../../sass/img-positions/1.scss */
+.table-2 {
+  left: 0%;
+  top: 5700px;
+}
+
+/* line 54, ../../sass/img-positions/1.scss */
+.glasses-7 {
+  left: 60%;
+  top: 6600px;
+}
+
+/* line 59, ../../sass/img-positions/1.scss */
+.watch-2 {
+  left: 15%;
+  top: 7000px;
+}
+
+@media all and (max-width: 1300px) {
+  /* line 67, ../../sass/img-positions/1.scss */
+  .lamp-7 {
+    left: 15%;
+  }
+
+  /* line 70, ../../sass/img-positions/1.scss */
+  .chair-7 {
+    left: 40%;
+    top: 600px;
+  }
+
+  /* line 74, ../../sass/img-positions/1.scss */
+  .table-5 {
+    left: 10%;
+    top: 1400px;
+  }
+
+  /* line 78, ../../sass/img-positions/1.scss */
+  .chair-5 {
+    left: 65%;
+    top: 1600px;
+  }
+
+  /* line 82, ../../sass/img-positions/1.scss */
+  .glasses-4 {
+    left: 0%;
+    top: 2200px;
+  }
+
+  /* line 86, ../../sass/img-positions/1.scss */
+  .watch-7 {
+    left: 33%;
+    top: 2400px;
+  }
+
+  /* line 90, ../../sass/img-positions/1.scss */
+  .lamp-1 {
+    right: -20%;
+    top: 2800px;
+  }
+
+  /* line 94, ../../sass/img-positions/1.scss */
+  .table-2 {
+    left: 0%;
+    top: 4400px;
+  }
+
+  /* line 98, ../../sass/img-positions/1.scss */
+  .glasses-7 {
+    left: 60%;
+    top: 5100px;
+  }
+
+  /* line 102, ../../sass/img-positions/1.scss */
+  .watch-2 {
+    left: 15%;
+    top: 5400px;
+  }
+}
+@media all and (max-width: 800px) {
+  /* line 112, ../../sass/img-positions/1.scss */
+  .lamp-7, .chair-7, .table-5, .chair-5, .glasses-4, .watch-7, .lamp-1, .table-2, .glasses-7, .watch-2 {
+    right: 0px;
+    top: 0px;
+  }
+
+  /* line 120, ../../sass/img-positions/1.scss */
+  .home-images .images {
+    -webkit-transform-origin-x: 0;
+    -webkit-transform-origin-y: 0;
+    -webkit-transform: scale(0.4);
+  }
+
+  /* line 132, ../../sass/img-positions/1.scss */
+  .chair-7 {
+    top: 430px;
+  }
+
+  /* line 136, ../../sass/img-positions/1.scss */
+  .table-5 {
+    top: 750px;
+  }
+
+  /* line 139, ../../sass/img-positions/1.scss */
+  .chair-5 {
+    top: 1030px;
+  }
+
+  /* line 143, ../../sass/img-positions/1.scss */
+  .glasses-4 {
+    top: 1350px;
+  }
+
+  /* line 147, ../../sass/img-positions/1.scss */
+  .watch-7 {
+    top: 1630px;
+  }
+
+  /* line 150, ../../sass/img-positions/1.scss */
+  .lamp-1 {
+    top: 2030px;
+  }
+
+  /* line 153, ../../sass/img-positions/1.scss */
+  .table-2 {
+    top: 2310px;
+  }
+
+  /* line 156, ../../sass/img-positions/1.scss */
+  .glasses-7 {
+    top: 2670px;
+  }
+
+  /* line 160, ../../sass/img-positions/1.scss */
+  .watch-2 {
+    top: 2900px;
+  }
+}

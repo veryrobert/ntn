@@ -1,0 +1,114 @@
+/* line 4, ../../sass/img-positions/5.scss */
+.home-images img {
+  display: none;
+}
+/* line 9, ../../sass/img-positions/5.scss */
+.home-images .glasses-2 img, .home-images .watch-1 img, .home-images .chair-4 img, .home-images .lamp-3 img,
+.home-images .chair-2 img, .home-images .table-3 img, .home-images .glasses-1 img, .home-images .watch-7 img {
+  display: block;
+}
+
+/* line 15, ../../sass/img-positions/5.scss */
+.glasses-2 {
+  left: 15%;
+}
+
+/* line 19, ../../sass/img-positions/5.scss */
+.lamp-3 {
+  left: 60%;
+  top: 900px;
+  z-index: 200 !important;
+}
+
+/* line 25, ../../sass/img-positions/5.scss */
+.watch-1 {
+  left: 0%;
+  top: 1500px;
+}
+
+/* line 30, ../../sass/img-positions/5.scss */
+.chair-4 {
+  left: 65%;
+  top: 2450px;
+  z-index: 0;
+}
+
+/* line 36, ../../sass/img-positions/5.scss */
+.table-3 {
+  left: 0%;
+  top: 3400px;
+}
+
+/* line 41, ../../sass/img-positions/5.scss */
+.chair-2 {
+  right: 5%;
+  top: 4200px;
+}
+
+/* line 46, ../../sass/img-positions/5.scss */
+.glasses-1 {
+  left: 5%;
+  top: 4800px;
+}
+
+/* line 51, ../../sass/img-positions/5.scss */
+.watch-7 {
+  left: 55%;
+  top: 5800px;
+}
+
+@media all and (max-width: 1300px) {
+  /* line 60, ../../sass/img-positions/5.scss */
+  .glasses-2 {
+    left: 15%;
+  }
+
+  /* line 64, ../../sass/img-positions/5.scss */
+  .lamp-3 {
+    left: 55%;
+    top: 700px;
+    z-index: 200 !important;
+  }
+
+  /* line 70, ../../sass/img-positions/5.scss */
+  .watch-1 {
+    left: 0%;
+    top: 1100px;
+  }
+
+  /* line 75, ../../sass/img-positions/5.scss */
+  .chair-4 {
+    left: 60%;
+    top: 1700px;
+    z-index: 0;
+  }
+
+  /* line 81, ../../sass/img-positions/5.scss */
+  .table-3 {
+    left: 0%;
+    top: 2400px;
+  }
+
+  /* line 86, ../../sass/img-positions/5.scss */
+  .chair-2 {
+    left: 45%;
+    top: 3400px;
+  }
+
+  /* line 91, ../../sass/img-positions/5.scss */
+  .glasses-1 {
+    left: 5%;
+    top: 3600px;
+  }
+
+  /* line 96, ../../sass/img-positions/5.scss */
+  .watch-7 {
+    left: 55%;
+    top: 4300px;
+  }
+
+  /* line 103, ../../sass/img-positions/5.scss */
+  body {
+    min-height: 6000px;
+  }
+}

@@ -2,8 +2,25 @@ var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
 var isiPad = navigator.userAgent.toLowerCase().indexOf("ipad");
 var isiPod = navigator.userAgent.toLowerCase().indexOf("ipod");
 
+var pathArray = window.location.pathname.split('/');
+var secondLevel = pathArray[1];
+var products = ["chair.php", "glasses.php", "family.php", "watch.php", "lamp.php", "table.php"];
+var collection = 'collection.php';
+
 
 $(document).ready(function () {
+
+
+ if(isiPhone > -1)
+        {
+            console.log('hell yes');
+        } else {
+            console.log('hell no');
+        }
+
+
+
+
 
 
 $(function () {
@@ -33,10 +50,7 @@ pageBits();
     $(".npfooter").css('top', $('.getHeight').innerHeight() + 68).hide().fadeIn();  
 
 
-    var pathArray = window.location.pathname.split('/');
-    var secondLevel = pathArray[1];
-    var products = ["chair.php", "glasses.php", "family.php", "watch.php", "lamp.php", "table.php"];
-    var collection = 'collection.php';
+
 
     $('#pages a[href="'+ secondLevel +'"]').addClass('active');
 
