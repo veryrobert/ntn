@@ -25,15 +25,7 @@ $monospace: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida
 }
 
 // Image hover mixin
-@mixin sprite {
-  display: inline-block;
-  position: relative;
-  text-indent: -9999px;
-}
 
-@mixin sprite-hover {
-  opacity: 1;
-}
 
 // - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - - - //
 
@@ -43,22 +35,29 @@ $monospace: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida
   text-shadow: 0px;
 }
 
+
 // Body & Wrap
 
-body.home {
+body {
   width: 100%;
   &.overlay {
     height: 100%;
     overflow: hidden;
   }
-}
 
-body.home {
+  &.home {
   height: 9000px;
 }
 
-body.collection {
+&.collection {
   height: 5000px;
+}
+
+
+}
+
+.nav-button {
+  display:none;
 }
 
 // Logo
@@ -124,6 +123,8 @@ nav {
   }
 }
 
+
+
 nav {
   @include monospace;
   background-color: white;
@@ -184,7 +185,6 @@ nav {
   }
 }
 
-// images
 
 div.images {
   position: absolute;
@@ -326,11 +326,11 @@ a {
   border-bottom: solid 500px #e4e4e4;
   p {
     font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
-    font-size: 22px;
+   font-size: 20px;
     font-weight: 200;
     text-transform: none;
     letter-spacing: 2px;
-    line-height: 34px;
+    line-height: 32px;
     width: 780px;
     margin-top: 80px;
     margin-bottom: 60px;
@@ -364,8 +364,9 @@ a {
 
 // Checkout mixins for the rest
 .close {
-  @include sprite;
   position: fixed;
+  text-indent: -9999px;
+  overflow: hidden;
   top: 20px;
   right: 20px;
   display: none;
@@ -385,7 +386,7 @@ a {
     background-image: url("../img/close.svg"), none;
   }
   &:hover:after {
-    @include sprite-hover;
+  
     background-position: 0px -36px;
     background-color: #e4e4e4;
   }
@@ -463,6 +464,7 @@ a {
     margin-bottom: 30px;
     text-transform: none;
   }
+
   ul {
     li {
       @include monospace;
@@ -510,9 +512,28 @@ a.active {
 
 // - - - - - - - - - - - - - Media queries - - - - - - - - - - - - - - - - //
 
+
+.grey {
+
+color: #ccc;
+@include transition(all 0.3s ease-in-out);
+border-bottom:1px solid #fff;
+
+text-decoration:none;
+
+}
+
 .text {
   p {
-    font-size: 13px;
+    font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 30px;
+    width: 600px;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -550,7 +571,7 @@ a:hover {
   body.collection {
     height: 3000px;
     #guts {
-      height: 4200px;
+      // height: 4200px;
     }
   }
   .home-images {
@@ -599,7 +620,6 @@ a:hover {
 
 
 @media all and (max-width: 800px) { 
-
 
 
 }

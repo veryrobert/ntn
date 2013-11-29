@@ -11,20 +11,23 @@
         <meta name="viewport" content="width=device-width">
         <link href="http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal" rel="stylesheet" type="text/css"/>
         
-        <link rel="stylesheet" href="css/styles.css"> 
-       <link rel="img-position" href="style" type="text/css"/>
+      <link rel="stylesheet" href="css/styles.css" media="screen" class="mainStyle"> 
+
+
        <script src="js/modernizr.js"></script>
     </head>
     <body>
       
-<header>
-   
+<div class="wrapper">
 
+<header>
 <a class="pages" id="logo" href="/"></a>
 
+<a class="nav-button" id="nav-button">
+</a>
 
-<nav id="main-nav">
-  <ul>
+<nav class="nav" id="main-nav">
+  <ul class="menu">
     <li><a href="collection.php" class="pages">collection</a></li>
     <li><a href="info.php" class="pages">info</a></li>
     <li><a href="stockists.php" class="pages">stockists</a></li>

@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div class="welcome-overlay">
+<!-- <div class="welcome-overlay">
 
 <div class="text">
 
@@ -22,7 +22,7 @@
     </div> 
 
 </div> 
-
+ -->
 
 <span id="homepage-flag" style="display: none" ></span>
 
@@ -34,12 +34,12 @@
     </div>
 
     <div class="npfooter">
-         <a class="prev-footer" href="prev">Prev</a> 
-        <a class="next-footer" href="next">Next</a>
+         <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-button" href="next">Next</a>
     </div>
 
 
-    <a class="close" >Close</a>
+    <a class="close closeOverlay" ></a>
 
     <section id="product-content">
 

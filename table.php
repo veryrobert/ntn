@@ -16,12 +16,12 @@
     </div>
 
     <div class="npfooter">
-    	 <a class="prev-footer" href="prev">Prev</a> 
-        <a class="next-footer" href="next">Next</a>
+    	 <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-button" href="next">Next</a>
     </div>
 
 
-    <a class="close" >Close</a>
+    <a class="close closeOverlay" >Close</a>
 
 	<section id="product-content">
 		<div id="product-guts" class="content table getHeight">
@@ -49,7 +49,7 @@
  <a target="_blank" href="http://twitter.com/share?text=NTN%20—%20Hammock%20table%20via%20@madebyntn&url=http://www.ntn.ie/table.php">
 		Share</a>
 
-<a class="purchasing" href="purchasing-table.php">purchasing</a>
+<a class="purchasing closeOverlay" href="purchasing-table.php">purchasing</a>
 
 
 </div>

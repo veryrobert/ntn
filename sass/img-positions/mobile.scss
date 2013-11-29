@@ -1,0 +1,269 @@
+@import url("http://fnt.webink.com/wfs/webink.css/?project=2DF6DF7F-2365-44F8-AEF4-64C8FDEB7C24&fonts=A319027C-12AA-B925-80E0-038136541C31:f=CombPro-Light,7CF1284D-F3EF-E035-FE6B-63B75AB57257:f=CombPro-Thin,03618CE0-596B-B955-66D6-851FD65884E8:f=CombPro-Normal");
+
+@mixin monospace {
+  font-family: $monospace;
+  font-size: 13px;
+  text-transform: lowercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+$monospace: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+
+$tablet: 800px;
+$mobile: 400px;
+
+// - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - - - //
+
+* {
+  -webkit-transition: none;
+  outline: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media all and (max-width: $tablet) {}
+
+body {
+  &.home, &.collection {
+    float: left;
+    height: auto;
+    margin: 0 5% 10% 5%;
+  }
+  &.collection {
+    .imglink {
+      border-bottom: none;
+      z-index: 200;
+      position: absolute;
+      background: #ffffff;
+      top: -13px;
+      left: 0px;
+      padding: 10px 10px 10px 10px;
+      opacity: 1;
+      z-index: 200;
+      display: block;
+    }
+  }
+  &.overlay {
+    background: #e2e2e2;
+  }
+}
+
+header {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 200;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 42px;
+  padding: 10px 5% 10px 5%;
+}
+
+a {
+  @include monospace;
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.fullscreen {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.wrapper {
+  float: left;
+}
+
+#guts {
+  display: block;
+  position: absolute;
+  width: 90%;
+  margin-top: 20%;
+}
+
+.content {
+  background: #fff;
+  position: relative;
+  width: 97%;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+    border-bottom: solid 100px #e2e2e2;
+  }
+  p {
+    font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 97%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+  .inside-images {
+    margin-bottom: 150px;
+  }
+}
+
+h1, h2, h3, h4 {
+  @include monospace;
+  font-weight: normal;
+}
+
+.text {
+  margin-top: 80px;
+  max-width: 500px;
+  p {
+    font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    line-height: 28px;
+    width: 97%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  ul {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  li, a {
+    @include monospace;
+  }
+}
+
+.close, .nextandprev, .npfooter {
+  opacity: 0;
+}
+
+.purchasing {
+  margin-left: 20px;
+}
+
+#logo {
+  position: fixed;
+  top: 20px;
+}
+
+#pages {
+  display: none;
+}
+
+.imglink {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: $mobile) {}
+
+.nav-button {
+  padding: 6px;
+  position: fixed;
+  // background:#eee;
+  right: 4.5%;
+  top: 16px;
+  height: 19px;
+  width: 22px;
+  z-index: 9999;
+}
+
+nav {
+  position: fixed;
+  top: 62px;
+  width: 105%;
+  margin-left: -5%;
+  padding: 20px 5% 10px 5%;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.9);
+  ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    &.menu {
+      opacity: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      a {
+        font-size: 90%;
+      }
+    }
+  }
+}
+
+.home-images {
+  img {
+    display: none;
+  }
+  //  .glasses-7, .watch-2
+  .lamp-7, .chair-7, .table-5, .chair-5, .glasses-4, .watch-7, .lamp-1,  .table-2, .glasses-7, .watch-2,
+
+  .collection,
+  .chair,
+  .table,
+  .watch,
+  .glasses {
+    img {
+      display: block;
+    }
+  }
+}
+
+div.images {
+  position: relative;
+  -webkit-transform: scale(1);
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: $mobile) {
+  .content {
+    width: 93%;
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      width: 95%;
+      margin-right: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .text {
+      p {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        width: 95%;
+        margin-right: 10px;
+      }
+    }
+    .inside-images {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.grey {
+  color: #ccc;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}

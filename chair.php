@@ -11,12 +11,12 @@
     </div>
 
     <div class="npfooter">
-         <a class="prev-footer" href="prev">Prev</a> 
-        <a class="next-footer" href="next">Next</a>
+         <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-button" href="next">Next</a>
     </div>
 
 
-        <a class="close">Close</a>
+        <a class="close closeOverlay">Close</a>
 
         <section id="product-content">
                 <div id="product-guts" class="content chair getHeight">
@@ -35,7 +35,7 @@
 
                         <div class="share">
                                 <a href="http://twitter.com/share?text=NTN%20%E2%80%94%20Dowel%20Chair%20via%20@madebyntn&amp;url=http://www.ntn.ie/chair.php"
-                                target="_blank">Share</a> <a class="purchasing" href="purchasing-chair.php">Purchasing</a>
+                                target="_blank">Share</a> <a class="purchasing closeOverlay" href="purchasing-chair.php">Purchasing</a>
                         </div>
                 </div>
         </section>

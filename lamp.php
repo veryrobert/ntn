@@ -12,12 +12,12 @@
     </div>
 
     <div class="npfooter">
-    	 <a class="prev-footer" href="prev">Prev</a> 
-        <a class="next-footer" href="next">Next</a>
+    	 <a class="prev-button" href="prev">Prev</a> 
+        <a class="next-button" href="next">Next</a>
     </div>
 
 
-		<a class="close" >Close</a>
+		<a class="close closeOverlay" >Close</a>
 
 		<section id="product-content">
 			<div id="product-guts" class="content getHeight lamp" >
@@ -46,7 +46,7 @@
 		<a target="_blank" href="http://twitter.com/share?text=NTN%20—%20Waterford%20lamp%20via%20@madebyntn&url=http://www.ntn.ie/lamp.php">
 			Share</a>
 
-<a class="purchasing" href="purchasing-lamp.php">Purchasing</a>
+<a class="purchasing closeOverlay" href="purchasing-lamp.php">Purchasing</a>
 
 		</div>
 

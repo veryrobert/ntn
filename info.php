@@ -26,9 +26,9 @@
     </p>
 
  
-         <ul style="margin-top:90px;">
-        <li>Photography: <a target="_blank" href="http://www.twitter.com/madebyntn">Richard Gilligan</a></li>
-        <li>Design + Development: <a target="_blank" href="http://www.twitter.com/madebyntn">Robert Farrelly</a></li>
+         <ul >
+        <li class="grey">Photography: <a class="grey" target="_blank" href="http://www.twitter.com/madebyntn">Richard Gilligan</a></li>
+        <li class="grey">Design + Development: <a class="grey" target="_blank" href="http://www.twitter.com/madebyntn">Robert Farrelly</a></li>
        
     </ul>  
    
