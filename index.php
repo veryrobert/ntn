@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<!-- <div class="welcome-overlay">
+<div class="welcome-overlay">
 
 <div class="text">
 
@@ -22,7 +22,7 @@
     </div> 
 
 </div> 
- -->
+
 
 <span id="homepage-flag" style="display: none" ></span>
 

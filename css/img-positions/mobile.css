@@ -67,20 +67,37 @@ ul li {
   display: block;
 }
 
-/* line 81, ../../sass/img-positions/mobile.scss */
+/* line 82, ../../sass/img-positions/mobile.scss */
+.guts-overlay {
+  margin-top: 30px;
+}
+/* line 85, ../../sass/img-positions/mobile.scss */
+.guts-overlay a {
+  display: none;
+}
+
+/* line 90, ../../sass/img-positions/mobile.scss */
 .wrapper {
   float: left;
 }
 
-/* line 85, ../../sass/img-positions/mobile.scss */
+/* line 94, ../../sass/img-positions/mobile.scss */
 #guts {
   display: block;
   position: absolute;
   width: 90%;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
-/* line 92, ../../sass/img-positions/mobile.scss */
+/* line 103, ../../sass/img-positions/mobile.scss */
+body.collection #guts {
+  display: block;
+  position: absolute;
+  width: 90%;
+  margin-top: 15%;
+}
+
+/* line 114, ../../sass/img-positions/mobile.scss */
 .content {
   background: #fff;
   position: relative;
@@ -91,12 +108,12 @@ ul li {
   padding-bottom: 20px;
   opacity: 0;
 }
-/* line 101, ../../sass/img-positions/mobile.scss */
+/* line 123, ../../sass/img-positions/mobile.scss */
 .content.active {
   opacity: 1;
   border-bottom: solid 100px #e2e2e2;
 }
-/* line 105, ../../sass/img-positions/mobile.scss */
+/* line 127, ../../sass/img-positions/mobile.scss */
 .content p {
   font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
   font-size: 18px;
@@ -107,17 +124,18 @@ ul li {
   width: 97%;
   margin-top: 60px;
   margin-bottom: 60px;
+  font-weight: lighter;
 }
-/* line 116, ../../sass/img-positions/mobile.scss */
+/* line 139, ../../sass/img-positions/mobile.scss */
 .content h1 {
   margin-top: 20px;
 }
-/* line 119, ../../sass/img-positions/mobile.scss */
+/* line 142, ../../sass/img-positions/mobile.scss */
 .content .inside-images {
   margin-bottom: 150px;
 }
 
-/* line 124, ../../sass/img-positions/mobile.scss */
+/* line 147, ../../sass/img-positions/mobile.scss */
 h1, h2, h3, h4 {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -126,12 +144,12 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-/* line 129, ../../sass/img-positions/mobile.scss */
+/* line 152, ../../sass/img-positions/mobile.scss */
 .text {
   margin-top: 80px;
   max-width: 500px;
 }
-/* line 132, ../../sass/img-positions/mobile.scss */
+/* line 155, ../../sass/img-positions/mobile.scss */
 .text p {
   font-family: "Swiss-721","Helvetica-Neue", helvetica, arial, sans-serif;
   font-size: 18px;
@@ -142,13 +160,14 @@ h1, h2, h3, h4 {
   width: 97%;
   margin-top: 0px;
   margin-bottom: 30px;
+  font-weight: lighter;
 }
-/* line 143, ../../sass/img-positions/mobile.scss */
+/* line 167, ../../sass/img-positions/mobile.scss */
 .text ul {
   margin-left: 0px;
   padding-left: 0px;
 }
-/* line 147, ../../sass/img-positions/mobile.scss */
+/* line 171, ../../sass/img-positions/mobile.scss */
 .text li, .text a {
   font-family: "CombPro-normal", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
   font-size: 13px;
@@ -156,39 +175,39 @@ h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 152, ../../sass/img-positions/mobile.scss */
+/* line 176, ../../sass/img-positions/mobile.scss */
 .close, .nextandprev, .npfooter {
   opacity: 0;
 }
 
-/* line 156, ../../sass/img-positions/mobile.scss */
+/* line 180, ../../sass/img-positions/mobile.scss */
 .purchasing {
   margin-left: 20px;
 }
 
-/* line 160, ../../sass/img-positions/mobile.scss */
+/* line 184, ../../sass/img-positions/mobile.scss */
 #logo {
   position: fixed;
   top: 20px;
 }
 
-/* line 165, ../../sass/img-positions/mobile.scss */
+/* line 189, ../../sass/img-positions/mobile.scss */
 #pages {
   display: none;
 }
 
-/* line 169, ../../sass/img-positions/mobile.scss */
+/* line 193, ../../sass/img-positions/mobile.scss */
 .imglink {
   display: none;
 }
 
-/* line 173, ../../sass/img-positions/mobile.scss */
+/* line 197, ../../sass/img-positions/mobile.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 180, ../../sass/img-positions/mobile.scss */
+/* line 204, ../../sass/img-positions/mobile.scss */
 .nav-button {
   padding: 6px;
   position: fixed;
@@ -199,7 +218,7 @@ img {
   z-index: 9999;
 }
 
-/* line 191, ../../sass/img-positions/mobile.scss */
+/* line 215, ../../sass/img-positions/mobile.scss */
 nav {
   position: fixed;
   top: 62px;
@@ -209,39 +228,48 @@ nav {
   height: 140px;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 199, ../../sass/img-positions/mobile.scss */
+/* line 223, ../../sass/img-positions/mobile.scss */
 nav ul {
   margin-left: 0px;
   padding-left: 0px;
 }
-/* line 202, ../../sass/img-positions/mobile.scss */
+/* line 226, ../../sass/img-positions/mobile.scss */
 nav ul.menu {
   opacity: 0;
 }
-/* line 205, ../../sass/img-positions/mobile.scss */
+/* line 229, ../../sass/img-positions/mobile.scss */
 nav ul li {
   margin-bottom: 10px;
 }
-/* line 207, ../../sass/img-positions/mobile.scss */
+/* line 231, ../../sass/img-positions/mobile.scss */
 nav ul li a {
   font-size: 90%;
 }
 
-/* line 215, ../../sass/img-positions/mobile.scss */
-.home-images img {
+/* line 239, ../../sass/img-positions/mobile.scss */
+.welcome-overlay {
+  margin-top: 23%;
+}
+/* line 243, ../../sass/img-positions/mobile.scss */
+.welcome-overlay a {
   display: none;
 }
-/* line 226, ../../sass/img-positions/mobile.scss */
-.home-images .lamp-7 img, .home-images .chair-7 img, .home-images .table-5 img, .home-images .chair-5 img, .home-images .glasses-4 img, .home-images .watch-7 img, .home-images .lamp-1 img, .home-images .table-2 img, .home-images .glasses-7 img, .home-images .watch-2 img,
-.home-images .collection img,
-.home-images .chair img,
-.home-images .table img,
-.home-images .watch img,
-.home-images .glasses img {
+
+/* line 250, ../../sass/img-positions/mobile.scss */
+body.home .home-images img {
+  display: none;
+}
+/* line 261, ../../sass/img-positions/mobile.scss */
+body.home .home-images .lamp-7 img, body.home .home-images .chair-7 img, body.home .home-images .table-5 img, body.home .home-images .chair-5 img, body.home .home-images .glasses-4 img, body.home .home-images .watch-7 img, body.home .home-images .lamp-1 img, body.home .home-images .table-2 img, body.home .home-images .glasses-7 img, body.home .home-images .watch-2 img,
+body.home .home-images .collection img,
+body.home .home-images .chair img,
+body.home .home-images .table img,
+body.home .home-images .watch img,
+body.home .home-images .glasses img {
   display: block;
 }
 
-/* line 232, ../../sass/img-positions/mobile.scss */
+/* line 270, ../../sass/img-positions/mobile.scss */
 div.images {
   position: relative;
   -webkit-transform: scale(1);
@@ -249,11 +277,21 @@ div.images {
 }
 
 @media all and (max-width: 400px) {
-  /* line 239, ../../sass/img-positions/mobile.scss */
+  /* line 282, ../../sass/img-positions/mobile.scss */
+  body.home #guts {
+    top: 32%;
+  }
+
+  /* line 293, ../../sass/img-positions/mobile.scss */
+  body.collection #guts {
+    top: 10%;
+  }
+
+  /* line 303, ../../sass/img-positions/mobile.scss */
   .content {
     width: 93%;
   }
-  /* line 241, ../../sass/img-positions/mobile.scss */
+  /* line 305, ../../sass/img-positions/mobile.scss */
   .content p {
     font-size: 15px;
     line-height: 24px;
@@ -263,7 +301,7 @@ div.images {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  /* line 251, ../../sass/img-positions/mobile.scss */
+  /* line 315, ../../sass/img-positions/mobile.scss */
   .content .text p {
     font-size: 15px;
     line-height: 24px;
@@ -271,12 +309,12 @@ div.images {
     width: 95%;
     margin-right: 10px;
   }
-  /* line 259, ../../sass/img-positions/mobile.scss */
+  /* line 323, ../../sass/img-positions/mobile.scss */
   .content .inside-images {
     margin-bottom: 80px;
   }
 }
-/* line 265, ../../sass/img-positions/mobile.scss */
+/* line 329, ../../sass/img-positions/mobile.scss */
 .grey {
   color: #ccc;
   border-bottom: 1px solid #fff;

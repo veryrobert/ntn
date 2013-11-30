@@ -103,65 +103,15 @@
     left: 15%;
     top: 5400px;
   }
+
+  
+body.home {
+height: 6020px;
+}
+
 }
 
 
-
-@media all and (max-width: 800px) {
-
-.lamp-7, .chair-7, .table-5, .chair-5, .glasses-4, .watch-7, .lamp-1,  .table-2, .glasses-7, .watch-2 {
-  
-  right:0px;
-  top:0px;
-
-}
-
-  .home-images {
-    .images {
-
-      -webkit-transform-origin-x: 0;
-      -webkit-transform-origin-y: 0;
-      -webkit-transform: scale(0.4);
-    
-    }
-  }
-
-  .lamp-7 {
-  
-  }
-  .chair-7 {
- 
-    top: 430px;
-  }
-  .table-5 {
-    top: 750px;
-  }
-  .chair-5 {
-   
-    top: 1030px;
-  }
-  .glasses-4 {
-  
-    top: 1350px;
-  }
-  .watch-7 {
-    top: 1630px;
-  }
-  .lamp-1 {
-    top: 2030px;
-  }
-  .table-2 {
-    top: 2310px;
-  }
-  .glasses-7 {
-    
-    top: 2670px;
-  }
-  .watch-2 {
-  
-    top: 2900px;
-  }
-}
 
 
 

@@ -120,7 +120,7 @@
   }
 
   /* line 114, ../../sass/img-positions/2.scss */
-  body {
-    min-height: 7400px;
+  body.home {
+    height: 7400px;
   }
 }

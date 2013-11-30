@@ -101,6 +101,7 @@ $('.nav-button').click(function(e){
          pageBits();
     }, 300);
 
+cookieStuff(600);
 
 }
 
@@ -116,9 +117,7 @@ if ($.inArray(secondLevel, products) > -1) {
 }
 
 // Close button Stuff
-cookieStuff(600);
 pagesCookie();
-
 
 if (pathArray[1] == collection) {
      $(".close").attr("href", collection);
@@ -340,15 +339,15 @@ function randomStyle() {
 
 
 function cookieStuff(duration) {
-    var date = new Date();
+    var date = new Date(); 
     var minutes = duration;
     date.setTime(date.getTime() + (minutes * 60 * 1000));
-    if ($.cookie('test_status') != '1') {
+    if ($.cookie('welcome') != '1') {
         $('.welcome-overlay').css('display', 'block'),
         function () {
-            $('p').fadeIn();
+            $('.text').fadeIn();
         };
-        $.cookie('test_status', '1', {
+        $.cookie('welcome', '1', {
             expires: date
         });
     }

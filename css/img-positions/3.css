@@ -23,7 +23,7 @@
 /* line 25, ../../sass/img-positions/3.scss */
 .glasses-2 {
   left: 0%;
-  top: 1600px;
+  top: 1400px;
 }
 
 /* line 30, ../../sass/img-positions/3.scss */
@@ -108,7 +108,7 @@
   }
 
   /* line 103, ../../sass/img-positions/3.scss */
-  body {
-    min-height: 6000px;
+  body.home {
+    height: 6000px;
   }
 }

@@ -51,7 +51,7 @@
 /* line 51, ../../sass/img-positions/4.scss */
 .chair-5 {
   left: 55%;
-  top: 5800px;
+  top: 5600px;
 }
 
 /* line 56, ../../sass/img-positions/4.scss */
@@ -112,5 +112,10 @@
   .table-4 {
     left: 15%;
     top: 5600px;
+  }
+
+  /* line 114, ../../sass/img-positions/4.scss */
+  body.home {
+    height: 7000px;
   }
 }

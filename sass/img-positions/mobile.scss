@@ -78,6 +78,15 @@ ul {
   }
 }
 
+
+.guts-overlay {
+  margin-top: 30px;
+
+a { display: none;}
+
+}
+
+
 .wrapper {
   float: left;
 }
@@ -86,8 +95,21 @@ ul {
   display: block;
   position: absolute;
   width: 90%;
-  margin-top: 20%;
+  margin-top: 30%;
 }
+
+body.collection {
+
+    #guts {
+    display: block;
+    position: absolute;
+    width: 90%;
+    margin-top: 15%;
+  }
+
+
+}
+
 
 .content {
   background: #fff;
@@ -112,6 +134,7 @@ ul {
     width: 97%;
     margin-top: 60px;
     margin-bottom: 60px;
+    font-weight: lighter;
   }
   h1 {
     margin-top: 20px;
@@ -139,6 +162,7 @@ h1, h2, h3, h4 {
     width: 97%;
     margin-top: 0px;
     margin-bottom: 30px;
+    font-weight: lighter;
   }
   ul {
     margin-left: 0px;
@@ -211,6 +235,17 @@ nav {
   }
 }
 
+
+.welcome-overlay {
+
+  margin-top: 23%;
+
+  a { display: none;}
+
+}
+
+body.home {
+
 .home-images {
   img {
     display: none;
@@ -229,6 +264,9 @@ nav {
   }
 }
 
+}
+
+
 div.images {
   position: relative;
   -webkit-transform: scale(1);
@@ -236,6 +274,32 @@ div.images {
 }
 
 @media all and (max-width: $mobile) {
+
+
+
+body.home {
+
+  #guts {
+    
+    top: 32%;
+
+  }
+
+}
+
+
+body.collection {
+
+  #guts {
+    
+    top: 10%;
+
+  }
+
+}
+
+
+
   .content {
     width: 93%;
     p {

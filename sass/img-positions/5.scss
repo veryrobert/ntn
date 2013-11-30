@@ -18,7 +18,7 @@
 
 .lamp-3 {
   left: 60%;
-  top: 900px;
+  top: 950px;
   z-index: 200 !important;
 }
 
@@ -29,7 +29,7 @@
 
 .chair-4 {
   left: 65%;
-  top: 2450px;
+  top: 2500px;
   z-index: 0;
 }
 
@@ -40,17 +40,17 @@
 
 .chair-2 {
   right: 5%;
-  top: 4200px;
+  top: 4600px;
 }
 
 .glasses-1 {
   left: 5%;
-  top: 4800px;
+  top: 4900px;
 }
 
 .watch-7 {
   left: 55%;
-  top: 5800px;
+  top: 5900px;
 }
 
 
@@ -100,10 +100,9 @@
 
 
 
-  body {
+  body.home {
 
-      min-height: 6000px;
-    // background-color: aqua;
+    height: 6000px;
  
   }
 

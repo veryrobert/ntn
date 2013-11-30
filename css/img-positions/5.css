@@ -16,7 +16,7 @@
 /* line 19, ../../sass/img-positions/5.scss */
 .lamp-3 {
   left: 60%;
-  top: 900px;
+  top: 950px;
   z-index: 200 !important;
 }
 
@@ -29,7 +29,7 @@
 /* line 30, ../../sass/img-positions/5.scss */
 .chair-4 {
   left: 65%;
-  top: 2450px;
+  top: 2500px;
   z-index: 0;
 }
 
@@ -42,19 +42,19 @@
 /* line 41, ../../sass/img-positions/5.scss */
 .chair-2 {
   right: 5%;
-  top: 4200px;
+  top: 4600px;
 }
 
 /* line 46, ../../sass/img-positions/5.scss */
 .glasses-1 {
   left: 5%;
-  top: 4800px;
+  top: 4900px;
 }
 
 /* line 51, ../../sass/img-positions/5.scss */
 .watch-7 {
   left: 55%;
-  top: 5800px;
+  top: 5900px;
 }
 
 @media all and (max-width: 1300px) {
@@ -108,7 +108,7 @@
   }
 
   /* line 103, ../../sass/img-positions/5.scss */
-  body {
-    min-height: 6000px;
+  body.home {
+    height: 6000px;
   }
 }
